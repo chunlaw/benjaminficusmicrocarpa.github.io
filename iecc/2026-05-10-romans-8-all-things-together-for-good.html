@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romans 8: All Things Together For Good? | Island ECC</title>
+    <meta name="description" content="Week 5 of the Romans 8 series: Pastor Brett unpacks Romans 8:28-30 — life is hard, God is good, and the three ways God redeems all things for good (sanctification, spiritual intimacy, and eternal glory).">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iecc-base.css">
+    <link rel="stylesheet" href="css/romans-8.css">
+    <style>
+        .hero-header {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            max-width: 950px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 4px 12px rgba(0,0,0,0.6);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.2vw, 1.35rem);
+            font-family: 'Lora', serif;
+            font-style: italic;
+            color: var(--accent-light);
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--romans-gold) 0%, var(--romans-warm) 100%);
+            color: #1a0a0e;
+            box-shadow: 0 4px 15px rgba(212, 160, 80, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 80, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(245, 237, 232, 0.1);
+            color: var(--text-light);
+            border: 2px solid rgba(245, 237, 232, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(245, 237, 232, 0.2);
+            border-color: rgba(245, 237, 232, 0.5);
+        }
+
+        .tabs-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(18, 10, 14, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(107, 26, 42, 0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .tabs {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tabs::-webkit-scrollbar { display: none; }
+
+        .tab {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+
+        .main-content {
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--primary-light);
+        }
+
+        .content-card h2 {
+            color: var(--accent-light);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-card h3 {
+            color: var(--accent-light);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            opacity: 0.95;
+        }
+
+        .content-card ul, .content-card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .verse-card {
+            background: linear-gradient(135deg, rgba(107, 26, 42, 0.15) 0%, rgba(212, 160, 80, 0.08) 100%);
+            border-left: 4px solid var(--romans-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            font-family: 'Lora', serif;
+        }
+
+        .verse-ref {
+            color: var(--accent-light);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .verse-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        .verse-context {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-style: normal;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(245, 237, 232, 0.1);
+        }
+
+        .quote-block {
+            position: relative;
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(107, 26, 42, 0.1);
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+        }
+
+        .quote-block::before {
+            content: '\201C';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--romans-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .quote-text {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .quote-attribution {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(139, 32, 64, 0.12) 0%, rgba(107, 26, 42, 0.1) 100%);
+            border-left: 4px solid var(--romans-warm);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+        }
+
+        .highlight-box strong {
+            color: var(--accent-light);
+            font-size: 1.1rem;
+        }
+
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .flow-step {
+            background: var(--bg-card);
+            padding: 1.25rem 1.75rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(107, 26, 42, 0.25);
+            min-width: 160px;
+        }
+
+        .flow-step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .flow-step-title {
+            font-weight: 600;
+            color: var(--accent-light);
+            font-size: 1rem;
+        }
+
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: var(--romans-gold);
+            flex-shrink: 0;
+        }
+
+        .three-ways-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .way-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            border-top: 4px solid var(--romans-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .way-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 160, 80, 0.2);
+        }
+
+        .way-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .way-card h3 {
+            color: var(--accent-light);
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+        }
+
+        .way-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .app-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid var(--romans-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 160, 80, 0.2);
+        }
+
+        .app-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .app-card-title {
+            font-size: 1.3rem;
+            color: var(--accent-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .reflection-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .reflection-list li {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .reflection-list li::before {
+            content: '⚖️';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .sermon-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        @media (max-width: 768px) {
+            .hero-header {
+                height: auto;
+                min-height: 100svh;
+                overflow: visible;
+                padding: 3rem 0 2rem;
+            }
+            .hero-header .slideshow-container { min-height: 100%; }
+            .hero-content { padding: 1.5rem 1.25rem; }
+            .hero-title { font-size: 2rem; margin-bottom: 1rem; }
+            .hero-subtitle { font-size: 0.95rem; margin-bottom: 1rem; }
+            .hero-meta { font-size: 0.85rem; margin-bottom: 0.75rem; }
+            .sermon-tags-container { margin: 1rem 0; gap: 0.4rem; }
+            .hero-buttons { gap: 0.75rem; }
+            .btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+            .tabs { justify-content: flex-start; }
+            .tab { padding: 1rem 1.1rem; font-size: 0.85rem; }
+            .main-content { padding: 2rem 1rem; }
+            .content-card { padding: 1.5rem 1.25rem; border-radius: 12px; }
+            .content-card h2 { font-size: 1.5rem; }
+            .content-card h3 { font-size: 1.25rem; }
+            .app-grid { grid-template-columns: 1fr; }
+            .three-ways-grid { grid-template-columns: 1fr; }
+            .verse-card { padding: 1.25rem; }
+            .quote-block { padding: 1.5rem 1.25rem; }
+            .highlight-box { padding: 1.25rem; }
+            .reflection-list li { padding: 1.25rem 1.25rem 1.25rem 2.75rem; }
+            .flow-container { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+            .flow-step { min-width: unset; width: 100%; }
+        }
+
+        @media (max-width: 420px) {
+            .hero-header { padding: 2.5rem 0 1.5rem; }
+            .hero-title { font-size: 1.75rem; line-height: 1.25; }
+            .hero-subtitle { font-size: 0.9rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; justify-content: center; }
+            .main-content { padding: 1.5rem 0.75rem; }
+            .content-card { padding: 1.25rem 1rem; }
+        }
+
+        @media print {
+            .tabs-container, .hero-buttons, .attribution { display: none; }
+            .tab-content { display: block !important; page-break-after: always; }
+            body { background: white; color: black; }
+            .content-card { box-shadow: none; border: 1px solid #ccc; }
+        }
+
+        .tab:focus, .btn:focus {
+            outline: 3px solid var(--accent-light);
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body data-sermon-date="2026-05-10">
+    <header class="hero-header">
+        <div class="slideshow-container">
+            <div class="slideshow-slide active" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1920&q=80')"></div>
+        </div>
+
+        <div class="romans-accent-strip"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">🌹 Romans 8:<br>All Things Together For Good?</h1>
+            <p class="hero-subtitle">"And we know that in all things God works for the good of those who love him..." — Romans 8:28 (NIV)</p>
+            <div class="hero-meta">
+                📅 10 May 2026 | 🎤 Pastor Brett | 🏝️ Island ECC | 📖 Romans 8 Series (Week 5 of 7) | 💐 Mother's Day
+            </div>
+            <div class="sermon-tags-container" id="sermon-tags"></div>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/watch?v=GnJtQ2MknOM" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    ▶️ Watch Original Sermon
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    📚 View All Sermons
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" role="navigation" aria-label="Sermon sections">
+        <div class="tabs">
+            <div class="tab active" data-tab="overview" role="tab" aria-selected="true">📋 Overview</div>
+            <div class="tab" data-tab="sermon" role="tab" aria-selected="false">📖 Main Sermon</div>
+            <div class="tab" data-tab="verses" role="tab" aria-selected="false">✝️ Bible Verses</div>
+            <div class="tab" data-tab="redeems" role="tab" aria-selected="false">🔄 Three Ways God Redeems</div>
+            <div class="tab" data-tab="application" role="tab" aria-selected="false">🎯 Application</div>
+            <div class="tab" data-tab="reflection" role="tab" aria-selected="false">💭 Reflection</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="overview" class="tab-content active">
+            <div class="content-card">
+                <h2>📋 Sermon Overview</h2>
+                <p><strong>Central Theme:</strong> Life is hard. God is good. These two truths are not competing nor alternating — they coexist. God does not promise that everything <em>is</em> good, but He does promise to <em>redeem</em> all things for good. Romans 8:28 invites a faith that endures the worst of life by trusting the character of a God who weaves every thread, even the dark ones, into a larger purpose.</p>
+
+                <div class="highlight-box">
+                    <strong>Series context:</strong> Week 5 of seven in Romans 8 — the "sandwich" between <em>no condemnation</em> (8:1) and <em>no separation</em> (8:39). After being declared free, governed by the Spirit, adopted, and liberated, the question becomes: how does the called child of God endure trouble? Paul answers with his most famous verse.
+                </div>
+
+                <h3>📖 Key Passages</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:28 (NIV)</span>
+                    <div class="verse-text">"And we know that in all things God works for the good of those who love him, who have been called according to his purpose."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:29-30 (NIV)</span>
+                    <div class="verse-text">"For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters. And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified."</div>
+                </div>
+
+                <h3>🌟 Main Takeaways</h3>
+                <ol>
+                    <li><strong>"We know"</strong> — Paul's 13× phrase in Romans is an unshakable confidence: there are things you cannot know, but this you can.</li>
+                    <li><strong>Trouble is promised, not optional</strong> — Jesus said "in this world you <em>will</em> have trouble" (John 16:33). The Greek <em>thlipsis</em> means anguish, tribulation — the same word for Judas's betrayal.</li>
+                    <li><strong>Life is hard. God is good.</strong> — Both are true at the same time; faith does not flip between them.</li>
+                    <li><strong>God redeems all things — He does not declare all things good.</strong> Cancer, divorce, abuse are not good. But God works them together for good.</li>
+                    <li><strong>Three ways He redeems:</strong> He makes us more like Jesus, He grants spiritual intimacy, and He gives us His glory.</li>
+                    <li><strong>Eternal perspective re‑sizes present pain</strong> — three million years into eternity, "2026 was so bad" no longer holds the weight it does today.</li>
+                    <li><strong>"There are no maverick molecules in the universe."</strong> — Ben Sasse, on a stage 4 cancer diagnosis: God's sovereignty over every detail.</li>
+                </ol>
+
+                <h3>📐 Sermon Structure</h3>
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">⚠️</div>
+                        <div class="flow-step-title">Trouble is real</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Jesus, Paul, and Brett's mom</p>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🤝</div>
+                        <div class="flow-step-title">Hard + Good coexist</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Two truths, not alternating</p>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🔄</div>
+                        <div class="flow-step-title">Redeemed, not "good"</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">All things, all sources</p>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">✝️</div>
+                        <div class="flow-step-title">Three ways</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Christ-likeness · intimacy · glory</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sermon" class="tab-content">
+            <div class="content-card">
+                <h2>🌹 A Mother's Day Picture of Redemption</h2>
+                <p>Pastor Brett opened by introducing his mom — now 83, mother of three boys, the only woman in a household full of testosterone, room mother in elementary school, and (with a smile) currently dating her boyfriend Joe of two years.</p>
+                <p>But Joe is not Brett's dad. Brett's father died of kidney cancer in 2000 at age 59, when Brett's mom was 57. A year later, in 2001, Brett was offered the chance to pastor a small new church called Island ECC — meaning he would take three small children and three out of four grandchildren away from a freshly grieving widow.</p>
+                <p>Brett had Bible verses ready: "honour your father and mother"; "pure and undefiled religion is to take care of orphans and widows in need." His mom was a widow in need. He had built his case to stay.</p>
+                <p>His mom said: <em>"It's all good. I don't need you to take care of me. Your dad would want you to go."</em></p>
+                <p>That release, Brett said, "led us on this incredible journey." His mom has never once made him feel guilty about missing Mother's Day, Christmas, Easter, or birthdays. She has only been a blessing. <strong>She has learned what Romans 8:28 teaches: that God causes all things to work together for good.</strong></p>
+            </div>
+
+            <div class="content-card">
+                <h2>⚠️ Life Throws Curveballs</h2>
+                <p>Faith is supposed to help us make sense of life. But life is filled with unwanted surprises — pain, heartache, disappointment, betrayal — a cocktail of things that leaves us bewildered, confused, and tempted to lean away from God rather than toward Him.</p>
+                <p>So how does faith authentically assist us in making sense of life?</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:28 (NIV)</span>
+                    <div class="verse-text">"And we know that in all things God works for the good of those who love him, who have been called according to his purpose."</div>
+                </div>
+                <p>This is the most famous verse of Romans 8 — a bold claim that God is in control, that He is aware, that He not only sees your needs but is able to redeem the difficulties of this life.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>📜 The Golden Chain</h2>
+                <p>Paul does not stop at verse 28. He continues with a holy progression — what theologians call the "golden chain of salvation":</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:29-30 (NIV)</span>
+                    <div class="verse-text">"For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters. And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified."</div>
+                </div>
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">👁️</div>
+                        <div class="flow-step-title">Foreknew</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🎯</div>
+                        <div class="flow-step-title">Predestined</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">📣</div>
+                        <div class="flow-step-title">Called</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">⚖️</div>
+                        <div class="flow-step-title">Justified</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">👑</div>
+                        <div class="flow-step-title">Glorified</div>
+                    </div>
+                </div>
+                <p>As we trust in Jesus, we receive an elevated status: brothers and sisters of Jesus Christ, sons and daughters of God the Father. He has chosen ahead of time to make our lives purposeful — to chip away, refine, and conform us into the image of His Son.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>📖 Jesus and Paul on Trouble</h2>
+                <p>Paul does not write these words from a secluded monastery. He knew heartache and pain firsthand. And Jesus, before him, was unashamedly clear about the difficulty of life:</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 16:33 (NIV)</span>
+                    <div class="verse-text">"In this world you will have trouble. But take heart! I have overcome the world."</div>
+                </div>
+                <p>Jesus does not say "you <em>may</em> have trouble" or "some of you will." He says you <em>will</em>. Mark it. Plan on it. It's coming. By saying it ahead of time, He removes the surprise factor — though in practice we are still shocked by trouble, still tempted to compare ("why don't <em>they</em> have trouble?"), still feeling like we drew the short stick.</p>
+
+                <div class="highlight-box">
+                    <strong>Word study — <em>thlipsis</em>:</strong> The Greek word Jesus uses for "trouble" is not the everyday "ma fan" or "ho ma fan." It means affliction, anguish, tribulation. It is the same word used for Judas's betrayal of Jesus with a kiss. Trouble of this depth is part of every life.
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:35 (NIV)</span>
+                    <div class="verse-text">"Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?"</div>
+                    <div class="verse-context">Paul lists trouble first among the things that <em>cannot</em> separate us from God's love — the conclusion of Romans 8 we'll reach in two weeks.</div>
+                </div>
+
+                <h3>Paul's catalog of pain</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 2 Corinthians 11:24-28 (NIV, condensed)</span>
+                    <div class="verse-text">"Three times I was beaten with rods. Once I was pelted with stones. Three times I was shipwrecked. I spent a night and a day in the open sea. I have been constantly on the move... and on top of all this, my concern for all the churches."</div>
+                </div>
+                <p>His point: trouble comes in every form — emotional, financial, relational, marital, mental. Trouble is part of this fallen world. It is not a reflection of a God who designed it that way, but of a God who longs for it all to be redeemed and will one day do just that.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🎓 "We Know" — Unshakable Confidence</h2>
+                <p>Paul opens verse 28 with a phrase he does not use lightly. He does not write <em>we imagine</em>, <em>we guess</em>, or <em>we hope</em>. He writes <em>we know</em>.</p>
+                <div class="highlight-box">
+                    <strong>13× in Romans:</strong> Paul uses "we know" thirteen times in Romans alone — a definitive declaration. There are things he writes about tentatively. This is not one of them.
+                </div>
+                <p>Trouble breeds in the areas where we do not know — the prognosis, the financial future, the educational path, the relational outcome. Paul says: in the middle of all the things you do not know, hang your hat on something you <em>do</em> know.</p>
+                <p>The other "we know" in Romans 8 came last week:</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:22 (NIV)</span>
+                    <div class="verse-text">"We know that the whole creation has been groaning as in the pains of childbirth right up to the present time."</div>
+                    <div class="verse-context">A picture of a fallen world — disease, pollution, calamity, war, betrayal. We do not need convincing of this.</div>
+                </div>
+                <p>The two declarations stand together: <strong>"life is hard"</strong> and <strong>"yet God is good."</strong> They are not competing, not alternating. They coexist. In the very midst of life being hard, God is still good. This is where authentic, lamenting, celebrating, gritty, raw worship lives.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🔄 "Redeems" — Not "Declares Good"</h2>
+                <p>Be careful with what verse 28 actually says. It does <strong>not</strong> say <em>"with God all things are good."</em></p>
+                <ul>
+                    <li>Cancer — not good.</li>
+                    <li>Divorce — not good.</li>
+                    <li>Abuse — not good.</li>
+                </ul>
+                <p>Faith does not whitewash these things with a spiritualised "but it's good." It is evil. It is wrong. It is bad. <strong>But God causes all things to work together for good.</strong> That is very different.</p>
+                <p>Or to say it another way: <em>God redeems all things for good</em> — even your worst decisions, even bad you brought on yourself through your own choices, even bad that just happens with no fault of your own. Both categories. <strong>All things.</strong></p>
+                <p>God takes them all and works them for a good purpose, from <em>His</em> perspective of what good means. Not your list (Brett's was "bigger house in America"); His definition. And that requires trusting that the God who is good knows better than you. In the moments of darkness and questioning, we cling to the truths we learned in the light.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>✝️ Three Ways God Redeems All Things</h2>
+                <p>If we believe this is true, then we can expect God to redeem our things in three ways. (Each is unpacked in the dedicated tab — these are the headlines.)</p>
+                <ol>
+                    <li><strong>He makes us more like Jesus.</strong> Sanctification — chipping away at our character, refining us from the inside out, depositing His Spirit so love, joy, peace, and patience grow.</li>
+                    <li><strong>He grants us spiritual intimacy.</strong> Pain often draws us nearer to God. He is near to the brokenhearted. The harder our circumstances, the more fervent and frequent our prayers tend to become.</li>
+                    <li><strong>He gives us His glory.</strong> An eternal perspective that re-sizes present suffering. Verse 30 says we have already been glorified — a future hope so certain Paul writes it in past tense.</li>
+                </ol>
+            </div>
+
+            <div class="content-card">
+                <h2>🎤 Ben Sasse — "No Maverick Molecules"</h2>
+                <p>Brett closed with Ben Sasse — a former US senator who resigned to become president of the University of Florida and was diagnosed in December with stage 4 pancreatic cancer. In a 60 Minutes interview, Sasse spoke from his Reformed faith about how Romans 8:28 holds true even now:</p>
+                <div class="quote-block">
+                    <p class="quote-text">Death is wicked. Death is evil. Death is not how it's supposed to be. And me getting a cancer diagnosis is pretty small on the grand scheme of things, but it's a touch of grace. Because it forces me to tell the truth. And the lie I want to tell myself is that I'm the centre of everything, and I'm going to be around forever, and I can work harder and store up enough that I can atone for my own brokenness. I can't. So I hate cancer — but I'm also grateful for it. I tell a lot more truth to myself than I used to when I thought I was super omni-competent and interesting.</p>
+                    <p class="quote-attribution">— Ben Sasse, 60 Minutes interview</p>
+                </div>
+                <p>Asked about his family — his wife Melissa of 31 years, his two daughters (24 and 22), and his fourteen-year-old son — Sasse acknowledged the math of his time card does not allow him to walk his daughters down the aisle or watch his son's shoulders grow taller. But he ended with this:</p>
+                <div class="quote-block">
+                    <p class="quote-text">It's not a surprise to God. And God, you believe, has a plan? Absolutely. There are no maverick molecules in the universe.</p>
+                    <p class="quote-attribution">— Ben Sasse</p>
+                </div>
+                <p>Pastor Brett: <em>"If I said it or you said it, you might go, 'oh, whatever.' But when a guy like that says it, you have to think about it. A faith that runs deep, a faith that is being tested, a man with eyes wide open. He's aware of his destiny, but he's not cursing God. In fact, he's embracing faith. God causes all things to work together for good. All things."</em></p>
+            </div>
+        </section>
+
+        <section id="verses" class="tab-content">
+            <div class="content-card">
+                <h2>✝️ Scripture in This Sermon</h2>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:28 (NIV)</span>
+                    <div class="verse-text">"And we know that in all things God works for the good of those who love him, who have been called according to his purpose."</div>
+                    <div class="verse-context">The sermon's anchor verse — the most famous declaration of Romans 8.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:29 (NIV)</span>
+                    <div class="verse-text">"For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters."</div>
+                    <div class="verse-context">God's stated goal: to conform believers into the image of Jesus, the firstborn of a vast family.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:30 (NIV)</span>
+                    <div class="verse-text">"And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified."</div>
+                    <div class="verse-context">The "golden chain" — note that "glorified" is in the past tense even though the glory is future. So certain it is already done.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:35 (NIV)</span>
+                    <div class="verse-text">"Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?"</div>
+                    <div class="verse-context">Paul lists trouble first among the things that <em>cannot</em> separate us from God's love.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:18 (NIV)</span>
+                    <div class="verse-text">"I consider that our present sufferings are not worth comparing with the glory that will be revealed in us."</div>
+                    <div class="verse-context">Paul's eternal-perspective lens — the same verse anchored last week's sermon, repeated here for the "He gives us His glory" point.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 16:33 (NIV)</span>
+                    <div class="verse-text">"In this world you will have trouble. But take heart! I have overcome the world."</div>
+                    <div class="verse-context">Jesus' guarantee: trouble is not optional. The Greek <em>thlipsis</em> means anguish, the same word used for Judas's betrayal.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 2 Corinthians 11:24-28 (NIV, condensed)</span>
+                    <div class="verse-text">"Three times I was beaten with rods. Once I was pelted with stones. Three times I was shipwrecked. I spent a night and a day in the open sea. I have been constantly on the move... and on top of all this, my concern for all the churches."</div>
+                    <div class="verse-context">Paul knew trouble in every form — physical, emotional, relational, pastoral.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 2 Corinthians 7:10 (NIV, paraphrased in sermon)</span>
+                    <div class="verse-text">"Godly sorrow brings repentance that leads to salvation and leaves no regret, but worldly sorrow brings death."</div>
+                    <div class="verse-context">Quoted in the "spiritual intimacy" point — pain with God has purpose; pain without God only empties.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Proverbs 20:30 (paraphrased in sermon)</span>
+                    <div class="verse-text">"Sometimes it takes a painful experience to make us change our ways."</div>
+                    <div class="verse-context">Some truths we agree to intellectually but only embrace when heartache arrives.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:22 (NIV) — last week's "we know"</span>
+                    <div class="verse-text">"We know that the whole creation has been groaning as in the pains of childbirth right up to the present time."</div>
+                    <div class="verse-context">Paired with verse 28's "we know God works all things for good" — life is hard <em>and</em> God is good, both fully known.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 James 1:27 (NIV) — Brett's hesitation verse</span>
+                    <div class="verse-text">"Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress and to keep oneself from being polluted by the world."</div>
+                    <div class="verse-context">Brett used this verse as his case to stay in the US near his widowed mom — a case she gracefully released him from.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="redeems" class="tab-content">
+            <div class="content-card">
+                <h2>🔄 Three Ways God Redeems All Things</h2>
+                <p>From God's perspective — not ours — what does it look like for "all things to work together for good"? Pastor Brett identified three redemptive movements that the believer can expect.</p>
+            </div>
+
+            <div class="three-ways-grid">
+                <div class="way-card">
+                    <div class="way-card-icon">✝️</div>
+                    <h3>1. He Makes Us More Like Jesus</h3>
+                    <p><strong>What it is:</strong> Sanctification. God's goal is not just to reveal Himself, but to invite us into a journey where He is chipping away at our character — refining and defining us as His sons and daughters.</p>
+                    <p><strong>How it works:</strong> He deposits His Spirit in every believer and gives the gifts of the Spirit — love, joy, peace, patience — to grow through His might rather than ours. Pain often becomes the chisel.</p>
+                    <p><strong>Goal:</strong> "That He might be the firstborn among many brothers and sisters" (Rom 8:29). We get a beautiful portrait of God in Jesus — God with skin on — so we can study, listen, and learn what we are being conformed into.</p>
+                </div>
+
+                <div class="way-card">
+                    <div class="way-card-icon">🤝</div>
+                    <h3>2. He Grants Us Spiritual Intimacy</h3>
+                    <p><strong>What it is:</strong> A heightened awareness of God's nearness. He is present everywhere always, but as a follower of Christ you sense Him near at certain times — and pain is one of those times.</p>
+                    <p><strong>Why it matters:</strong> "He is near to the brokenhearted." Paul writes that godly sorrow brings repentance that leads to salvation and leaves no regret (2 Cor 7:10). Worldly sorrow without God brings only emptiness and death.</p>
+                    <p><strong>The chart you can draw:</strong> If you charted your life's circumstances against your prayer frequency, the two lines would move in inverse. Mountain-top? Casual prayer. Valley? Fervent prayer. Pain rouses dependence.</p>
+                </div>
+
+                <div class="way-card">
+                    <div class="way-card-icon">👑</div>
+                    <h3>3. He Gives Us His Glory</h3>
+                    <p><strong>What it is:</strong> An eternal perspective that re-sizes present pain. Verse 30 says He has <em>already</em> glorified us — a future hope written in past tense because it is that certain.</p>
+                    <p><strong>Why it matters:</strong> Romans 8:18 — "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us." There is a divine carrot dangled, an eternal perspective that supersedes, overshadows, and minimises whatever pain we experience now.</p>
+                    <p><strong>What it produces:</strong> Endurance. Patience. Perseverance. Hope. The right cocktail to navigate life with assurance.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>🇷🇺 Solzhenitsyn — "Bless You, Prison"</h3>
+                <p>Aleksandr Solzhenitsyn entered the Soviet gulag as an atheist and emerged a believer. In <em>The Gulag Archipelago</em> he wrote:</p>
+                <div class="quote-block">
+                    <p class="quote-text">Bless you, prison. Bless you for being in my life. For there, lying upon the rotting prison straw, I came to realise that the object of life is not prosperity, as we are made to believe, but the maturity of the human soul.</p>
+                    <p class="quote-attribution">— Aleksandr Solzhenitsyn, <em>The Gulag Archipelago</em></p>
+                </div>
+                <p>Maybe your blank is not "prison" but sickness, disappointment, heartache, divorce — none of which is God's design. But all are things God redeems, things in which He reveals Himself.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>📣 C. S. Lewis — "Pain Is God's Megaphone"</h3>
+                <div class="quote-block">
+                    <p class="quote-text">God whispers to us in our pleasures, speaks in our conscience, but shouts in our pains: it is His megaphone to rouse a deaf world.</p>
+                    <p class="quote-attribution">— C. S. Lewis, <em>The Problem of Pain</em></p>
+                </div>
+                <p>Brett's framing: when life is amazing, we tend to take God for granted and run our lives without dependence on Him. It is in the valleys that we cry out, lean in, pray more fervently and frequently. Pain is what rouses a deaf world.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>🏨 St. Teresa — "One Night in a Bad Motel"</h3>
+                <div class="quote-block">
+                    <p class="quote-text">In light of heaven, the worst suffering on earth will be seen to be no more serious than one night in a bad motel.</p>
+                    <p class="quote-attribution">— attributed to St. Teresa of Ávila</p>
+                </div>
+                <p>Brett's spelling-bee illustration unpacked this: at age 11 he was the heads-on favourite to win the school spelling bee. The next year, in sixth grade, he misspelled an early-round word — and the class erupted in <em>applause</em>. He fled to the bathroom in tears.</p>
+                <p>How much has that shaped him at 41? Zero. <em>"You know how many times I wake up now and go, 'I hope they know I know how to spell now.' Not ever. It was painful for a while. But it didn't devastate me for long."</em></p>
+                <p>Now imagine being three million years into eternity. Someone asks you about your life. Are you going to lead with "2026 was so bad"? Of course not. The pain was real — but eternity puts it in scale.</p>
+            </div>
+
+            <div class="highlight-box">
+                <strong>How they work together:</strong> The Spirit's chisel (1) often does its sharpest work through the intimacy of pain (2), and what sustains us through both is the certainty of glory ahead (3). The three ways are not menu options — they are facets of one redeeming purpose.
+            </div>
+        </section>
+
+        <section id="application" class="tab-content">
+            <div class="content-card">
+                <h2>🎯 Living Romans 8:28 This Week</h2>
+                <p>Application flows from Brett's three movements: invite the chisel, lean into pain as a doorway to intimacy, and look up the eternal timeline.</p>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-card-icon">🪞</div>
+                    <div class="app-card-title">Audit the Lie</div>
+                    <p>Ben Sasse named his lie: "I'm the centre of everything, I'll be around forever, I can store up enough to atone for my own brokenness." What is yours? Write it down. Then write Romans 8:28 underneath it.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🙏</div>
+                    <div class="app-card-title">Invert Your Prayer Chart</div>
+                    <p>Pray as fervently on the mountaintop as you do in the valley. If your prayer life only spikes during pain, ask God to grow dependence even in seasons of comfort.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">✝️</div>
+                    <div class="app-card-title">Welcome the Chisel</div>
+                    <p>Name one area of your character God has been pressing on — anxiety, anger, pride, fear. Ask Him to use this season's pain or pressure to refine that specific thing into Christ-likeness.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">📖</div>
+                    <div class="app-card-title">Memorise the Anchor</div>
+                    <p>Commit Romans 8:28 to memory this week. When trouble surprises you, let "we know" be louder than "I don't know." Hang your hat on what you can be sure of.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🤝</div>
+                    <div class="app-card-title">Encourage Someone in Trouble</div>
+                    <p>Reflection question 2 from the service: who do you know going through a hard time? Reach out today. Share Romans 8:28 — not as a Christian cliché, but as truth you have leaned on.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">👑</div>
+                    <div class="app-card-title">Run the Eternity Test</div>
+                    <p>Take one current pain. Ask: "Three million years into eternity, will this still be the headline of my life?" Use the answer to right-size today's grief without minimising it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="tab-content">
+            <div class="content-card">
+                <h2>💭 Reflection &amp; Discussion</h2>
+
+                <h3>📝 From the service</h3>
+                <ul class="reflection-list">
+                    <li>Looking back on your life, what are the two or three most difficult parts? How has God used those to change your perspective? Is there still more change He is doing in you now?</li>
+                    <li>How can you use these truths of Romans 8 to encourage someone you know who is going through a hard time?</li>
+                </ul>
+
+                <h3>🔍 Going deeper</h3>
+                <ul class="reflection-list">
+                    <li>The Greek word Jesus uses for "trouble" (<em>thlipsis</em>) is the same word for Judas's betrayal of Jesus. How does naming trouble at that depth change the way you read John 16:33?</li>
+                    <li>Brett insists Romans 8:28 says "God redeems all things for good," not "all things are good." Where have you been pressured (by yourself or others) to call something good that was actually evil?</li>
+                    <li>"Life is hard" and "God is good" are meant to coexist, not alternate. Which side do you tend to drift toward — minimising hardship, or losing sight of God's goodness?</li>
+                    <li>Solzhenitsyn could write "bless you, prison." Can you fill in your own blank — "bless you, ____ "? What has God done in your soul through it?</li>
+                    <li>C. S. Lewis says pain is God's megaphone. What is God shouting to you right now that He whispered before?</li>
+                    <li>Ben Sasse said, "There are no maverick molecules in the universe." Where in your life have you been treating circumstances as if they were maverick — outside God's awareness or care?</li>
+                    <li>Run the bad-motel test on a current suffering. Does eternal perspective make you minimise it, or make you more honest about it before God?</li>
+                </ul>
+
+                <h3>🙏 Prayer prompts</h3>
+                <ul class="reflection-list">
+                    <li><strong>For trust in trouble:</strong> Father, when life is hard, help me hold the truth that You are good — both at the same time, not one after the other.</li>
+                    <li><strong>For the chisel:</strong> God, refine me through this season. Make me more like Jesus, even if it costs me comfort.</li>
+                    <li><strong>For intimacy in pain:</strong> Holy Spirit, draw near in the valley. Let godly sorrow do its work in me.</li>
+                    <li><strong>For eternal perspective:</strong> Lord, lift my eyes from today's headline to eternity's story. Right-size my grief without dismissing it.</li>
+                    <li><strong>For someone hurting:</strong> God, bring to mind one person walking through trouble. Use me to remind them that You are working all things for good.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="attribution" id="attribution" role="contentinfo">
+        <div class="attribution-short" aria-label="Attribution">ℹ️</div>
+        <div class="attribution-full">
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                Generated by LLM with supervision and polishing by
+                <a href="../index.html" target="_blank" rel="noopener noreferrer">benjaminficusmicrocarpa</a>.
+                <a href="../license.html" target="_blank" rel="noopener noreferrer">MIT License</a>
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/iecc-common.js"></script>
+</body>
+</html>

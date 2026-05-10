@@ -90,6 +90,28 @@
   },
   "sermons": [
     {
+      "date": "2026-05-10",
+      "year": 2026,
+      "emoji": "🌹",
+      "title": "Romans 8: All Things Together For Good?",
+      "tags": ["romans-8", "faith", "christology", "hope", "trust", "perseverance", "sanctification", "grace", "romans", "john", "corinthians", "proverbs"],
+      "displayTags": [
+        { "type": "series", "label": "Romans 8" },
+        { "type": "theme", "label": "faith" },
+        { "type": "theme", "label": "christology" },
+        { "type": "topic", "label": "hope" },
+        { "type": "topic", "label": "trust" },
+        { "type": "topic", "label": "perseverance" },
+        { "type": "topic", "label": "sanctification" },
+        { "type": "topic", "label": "grace" },
+        { "type": "scripture", "label": "Romans 8" },
+        { "type": "scripture", "label": "John 16" },
+        { "type": "scripture", "label": "2 Corinthians 11" },
+        { "type": "scripture", "label": "Proverbs 20" }
+      ],
+      "link": "2026-05-10-romans-8-all-things-together-for-good.html"
+    },
+    {
       "date": "2026-05-03",
       "year": 2026,
       "emoji": "🕊️",
