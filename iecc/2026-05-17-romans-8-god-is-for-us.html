@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romans 8: God Is For Us | Island ECC</title>
+    <meta name="description" content="Week 6 of the Romans 8 series: Pastor Eric unpacks Romans 8:31-34 — the courtroom climax where accusations may be true but no longer relevant, Christ's vindication becomes ours, and the case is closed.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iecc-base.css">
+    <link rel="stylesheet" href="css/romans-8.css">
+    <style>
+        .hero-header {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            max-width: 950px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 4px 12px rgba(0,0,0,0.6);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.2vw, 1.35rem);
+            font-family: 'Lora', serif;
+            font-style: italic;
+            color: var(--accent-light);
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--romans-gold) 0%, var(--romans-warm) 100%);
+            color: #1a0a0e;
+            box-shadow: 0 4px 15px rgba(212, 160, 80, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 80, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(245, 237, 232, 0.1);
+            color: var(--text-light);
+            border: 2px solid rgba(245, 237, 232, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(245, 237, 232, 0.2);
+            border-color: rgba(245, 237, 232, 0.5);
+        }
+
+        .tabs-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(18, 10, 14, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(107, 26, 42, 0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .tabs {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tabs::-webkit-scrollbar { display: none; }
+
+        .tab {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+
+        .main-content {
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--primary-light);
+        }
+
+        .content-card h2 {
+            color: var(--accent-light);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-card h3 {
+            color: var(--accent-light);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            opacity: 0.95;
+        }
+
+        .content-card ul, .content-card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .verse-card {
+            background: linear-gradient(135deg, rgba(107, 26, 42, 0.15) 0%, rgba(212, 160, 80, 0.08) 100%);
+            border-left: 4px solid var(--romans-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            font-family: 'Lora', serif;
+        }
+
+        .verse-ref {
+            color: var(--accent-light);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .verse-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        .verse-context {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-style: normal;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(245, 237, 232, 0.1);
+        }
+
+        .quote-block {
+            position: relative;
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(107, 26, 42, 0.1);
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+        }
+
+        .quote-block::before {
+            content: '\201C';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--romans-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .quote-text {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .quote-attribution {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(139, 32, 64, 0.12) 0%, rgba(107, 26, 42, 0.1) 100%);
+            border-left: 4px solid var(--romans-warm);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+        }
+
+        .highlight-box strong {
+            color: var(--accent-light);
+            font-size: 1.1rem;
+        }
+
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .flow-step {
+            background: var(--bg-card);
+            padding: 1.25rem 1.75rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(107, 26, 42, 0.25);
+            min-width: 140px;
+        }
+
+        .flow-step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .flow-step-title {
+            font-weight: 600;
+            color: var(--accent-light);
+            font-size: 1rem;
+        }
+
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: var(--romans-gold);
+            flex-shrink: 0;
+        }
+
+        .court-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .court-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            border-top: 4px solid var(--romans-gold);
+        }
+
+        .court-card h3 {
+            color: var(--accent-light);
+            font-size: 1.3rem;
+            margin: 0 0 0.75rem;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .app-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid var(--romans-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 160, 80, 0.2);
+        }
+
+        .app-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .app-card-title {
+            font-size: 1.3rem;
+            color: var(--accent-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .reflection-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .reflection-list li {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .reflection-list li::before {
+            content: '⚖️';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .sermon-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        @media (max-width: 768px) {
+            .hero-header {
+                height: auto;
+                min-height: 100svh;
+                overflow: visible;
+                padding: 3rem 0 2rem;
+            }
+            .hero-header .slideshow-container { min-height: 100%; }
+            .hero-content { padding: 1.5rem 1.25rem; }
+            .hero-title { font-size: 2rem; margin-bottom: 1rem; }
+            .hero-subtitle { font-size: 0.95rem; margin-bottom: 1rem; }
+            .hero-meta { font-size: 0.85rem; margin-bottom: 0.75rem; }
+            .sermon-tags-container { margin: 1rem 0; gap: 0.4rem; }
+            .hero-buttons { gap: 0.75rem; }
+            .btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+            .tabs { justify-content: flex-start; }
+            .tab { padding: 1rem 1.1rem; font-size: 0.85rem; }
+            .main-content { padding: 2rem 1rem; }
+            .content-card { padding: 1.5rem 1.25rem; border-radius: 12px; }
+            .content-card h2 { font-size: 1.5rem; }
+            .content-card h3 { font-size: 1.25rem; }
+            .app-grid, .court-grid { grid-template-columns: 1fr; }
+            .verse-card { padding: 1.25rem; }
+            .quote-block { padding: 1.5rem 1.25rem; }
+            .highlight-box { padding: 1.25rem; }
+            .reflection-list li { padding: 1.25rem 1.25rem 1.25rem 2.75rem; }
+            .flow-container { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+            .flow-step { min-width: unset; width: 100%; }
+        }
+
+        @media (max-width: 420px) {
+            .hero-header { padding: 2.5rem 0 1.5rem; }
+            .hero-title { font-size: 1.75rem; line-height: 1.25; }
+            .hero-subtitle { font-size: 0.9rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; justify-content: center; }
+            .main-content { padding: 1.5rem 0.75rem; }
+            .content-card { padding: 1.25rem 1rem; }
+        }
+
+        @media print {
+            .tabs-container, .hero-buttons, .attribution { display: none; }
+            .tab-content { display: block !important; page-break-after: always; }
+            body { background: white; color: black; }
+            .content-card { box-shadow: none; border: 1px solid #ccc; }
+        }
+
+        .tab:focus, .btn:focus {
+            outline: 3px solid var(--accent-light);
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body data-sermon-date="2026-05-17">
+    <header class="hero-header">
+        <div class="slideshow-container">
+            <div class="slideshow-slide active" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1920&q=80')"></div>
+        </div>
+
+        <div class="romans-accent-strip"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">⚖️ Romans 8:<br>God Is For Us</h1>
+            <p class="hero-subtitle">"If God is for us, who can be against us?" — Romans 8:31 (NIV)</p>
+            <div class="hero-meta">
+                📅 17 May 2026 | 🎤 Pastor Eric | 🏝️ Island ECC | 📖 Romans 8 Series (Week 6 of 7)
+            </div>
+            <div class="sermon-tags-container" id="sermon-tags"></div>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/watch?v=bCiAWeTt9iM" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    ▶️ Watch Original Sermon
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    📚 View All Sermons
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" role="navigation" aria-label="Sermon sections">
+        <div class="tabs">
+            <div class="tab active" data-tab="overview" role="tab" aria-selected="true">📋 Overview</div>
+            <div class="tab" data-tab="sermon" role="tab" aria-selected="false">📖 Main Sermon</div>
+            <div class="tab" data-tab="verses" role="tab" aria-selected="false">✝️ Bible Verses</div>
+            <div class="tab" data-tab="courtroom" role="tab" aria-selected="false">⚖️ Courtroom Drama</div>
+            <div class="tab" data-tab="application" role="tab" aria-selected="false">🎯 Five Freedoms</div>
+            <div class="tab" data-tab="reflection" role="tab" aria-selected="false">💭 Reflection</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="overview" class="tab-content active">
+            <div class="content-card">
+                <h2>📋 Sermon Overview</h2>
+                <p><strong>Central Theme:</strong> Every accusation we hear — from the world or from within — may be true. Romans 8:31–34 answers with a courtroom climax: the charges were real, the verdict has been handed down, and the punishment was paid by Jesus. The case is closed. We live in light of divine favour, not endless self-defence.</p>
+
+                <div class="highlight-box">
+                    <strong>Series context:</strong> Week 6 of seven — the "bacon" of the Romans 8 sandwich. Paul has built from <em>no condemnation</em> (8:1) through the Spirit, adoption, groaning creation, and God's redeeming purpose. Today he reaches the rhetorical peak: <strong>God is for us</strong> — proven by the cross, sealed by resurrection, and sustained by Christ's ongoing intercession.
+                </div>
+
+                <h3>📖 Key Passages</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:31-34 (NIV)</span>
+                    <div class="verse-text">"If God is for us, who can be against us? He who did not spare his own Son, but gave him up for us all — how will he not also, along with him, graciously give us all things? Who will bring any charge against those whom God has chosen? It is God who justifies. Who then is the one who condemns? No one. Christ Jesus who died — more than that, who was raised to life — is at the right hand of God and is also interceding for us."</div>
+                </div>
+
+                <h3>🌟 Main Takeaways</h3>
+                <ol>
+                    <li><strong>Accusations can be true</strong> — Christianity is honest about guilt; the enemy is not always lying.</li>
+                    <li><strong>God's posture is "for us"</strong> — not only when we worship well, but when we feel we have come up short.</li>
+                    <li><strong>Paul uses legal language on purpose</strong> — Zechariah 3 and Isaiah 50 preview the courtroom Paul describes.</li>
+                    <li><strong>Joshua stood guilty in filthy garments</strong> — no defence, yet God rebuked the accuser and clothed him in grace.</li>
+                    <li><strong>United with Christ, his vindication is ours</strong> — we borrow his victory, not our own goodness.</li>
+                    <li><strong>The trial already happened</strong> — Jesus paid the debt; court is adjourned; further accusations are whispers in an empty room.</li>
+                    <li><strong>Christ still intercedes</strong> — at the Father's right hand, advocating for you right now.</li>
+                </ol>
+
+                <h3>📐 Sermon Structure</h3>
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">😔</div>
+                        <div class="flow-step-title">Real guilt</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">⚖️</div>
+                        <div class="flow-step-title">OT courtroom</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">✝️</div>
+                        <div class="flow-step-title">Christ's victory</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🛡️</div>
+                        <div class="flow-step-title">Case closed</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🕊️</div>
+                        <div class="flow-step-title">Five freedoms</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sermon" class="tab-content">
+            <div class="content-card">
+                <h2>🥓 The Bacon of Romans 8</h2>
+                <p>Pastor Eric opened with humour: in a seven-week series on one chapter, he landed the "bacon" — Romans 8:31–34, the climax where Paul declares that God is for us. The church has journeyed through no condemnation, the Spirit's work, adoption, creation's groan, and God's redeeming purpose. Today: the case that God is <em>for</em> his people — proven at the cross and sustained by Christ's intercession.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>👕 Worship, Guilt, and "Embracing Accusation"</h2>
+                <p>Eric told how he met his wife Katie twenty years ago because she wore a shirt from worship leaders Shane &amp; Shane — a moment that started their story. Around that time their album <em>Pages</em> included a song called <em>Embracing Accusation</em>, written from a season when one of them felt the weight of not being good enough.</p>
+                <p>The line that stuck: <em>"The father of lies is speaking the truth — the accusations that I'm hearing, he's not lying. They're actually true."</em> Parts of his heart and life really had fallen short. He wrestled with guilt that felt defeating — the same inner turmoil many of us know when failure, sin, or disappointment lands.</p>
+                <p>That sets up the question Paul answers: <strong>What is God's actual posture toward us</strong> — not on the good days when hands are raised, but on the days we feel we have failed?</p>
+            </div>
+
+            <div class="content-card">
+                <h2>📖 Romans 8:31-34 — The Climax</h2>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:31-34 (NIV)</span>
+                    <div class="verse-text">"What, then, shall we say in response to these things? If God is for us, who can be against us? He who did not spare his own Son, but gave him up for us all — how will he not also, along with him, graciously give us all things? Who will bring any charge against those whom God has chosen? It is God who justifies. Who then is the one who condemns? No one. Christ Jesus who died — more than that, who was raised to life — is at the right hand of God and is also interceding for us."</div>
+                </div>
+                <p>Paul's logic: if God did not spare his Son, he will not withhold any good we truly need. No valid charge can stand — God himself justifies. No one condemns. Christ died, rose, sits at the Father's right hand, and <strong>intercedes for us now</strong>.</p>
+                <p>Notice the language: deeply <strong>legal</strong>, adversarial. Paul is not inventing a metaphor — he is fulfilling what God prepared Israel to understand through courtroom visions in the Old Testament.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>⚖️ Zechariah 3 — Joshua the High Priest</h2>
+                <p>After Israel returned from exile, the people were discouraged and spiritually compromised. Zechariah 3 opens a vision: Joshua the high priest stands before the angel of the Lord. To his right stands Satan — whose Hebrew name means <strong>accuser</strong> or <strong>adversary</strong>.</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Zechariah 3:1-4 (NIV)</span>
+                    <div class="verse-text">"Then he showed me Joshua the high priest standing before the angel of the Lord, and Satan standing at his right side to accuse him. The Lord said to Satan, 'The Lord rebuke you, Satan! The Lord, who has chosen Jerusalem, rebuke you! Is not this man a burning stick snatched from the fire?' Now Joshua was dressed in filthy clothes as he stood before the angel. The angel said to those who were standing before him, 'Take off his filthy clothes.' Then he said to Joshua, 'See, I have taken away your sin, and I will put fine garments on you.'"</div>
+                </div>
+                <p>Joshua represents not only himself but the nation. His garments are shockingly filthy in the original — excrement-filled clothing symbolising real guilt. He offers <strong>no defence</strong>. The accusations may be true. Yet before he can speak, God intervenes: <em>Is this not the one I snatched from the fire?</em> Remove the filthy clothes; I have taken away the sin; clothe him in fine garments.</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Zechariah 3:8-9 (NIV)</span>
+                    <div class="verse-text">"'Listen, High Priest Joshua, you and your associates seated before you, who are men symbolic of things to come: I am going to bring my servant, the Branch. See, the stone I have set in front of Joshua! ... and I will remove the sin of this land in a single day.'"</div>
+                    <div class="verse-context"><em>The Branch</em> throughout the Old Testament points to the Messiah — the true King and Priest who would remove sin in one day. We look back on what Jesus did.</div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>📜 Isaiah 50 — The Servant's Confidence</h2>
+                <p>In Isaiah's servant songs, the suffering servant speaks with bold confidence though facing opposition and accusation:</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Isaiah 50:8-9 (NIV)</span>
+                    <div class="verse-text">"He who vindicates me is near. Who then will bring charges against me? Let us face each other! Who is my accuser? Let him confront me! It is the Sovereign Lord who helps me. Who will condemn me?"</div>
+                </div>
+                <p>Place Isaiah 50 beside Romans 8:31–34 — Paul is not having a one-off flash of brilliance. He sees God keeping his word. When we ask "Who can bring charges? Who condemns?" it is not because we are impressive, but because <strong>we are united with Christ</strong> and his vindication becomes ours.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🏛️ Court Adjourned — Empty Courtroom</h2>
+                <p>Eric's central insight: the accuser has already brought every charge. Your worst fears were known. The trial happened. You were found guilty — and <strong>Jesus paid the penalty</strong>. He died and rose. There is no double jeopardy.</p>
+                <div class="highlight-box">
+                    <strong>The empty courtroom:</strong> When guilt whispers again, the adversary is speaking into a room where the case is already closed — futile accusations after the verdict.
+                </div>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Colossians 2:13-15 (NIV)</span>
+                    <div class="verse-text">"When you were dead in your sins and in the uncircumcision of your flesh, God made you alive with Christ. He forgave us all our sins, having canceled the charge of our legal indebtedness, which stood against us and condemned us; he has taken it away, nailing it to the cross. And having disarmed the powers and authorities, he made a public spectacle of them, triumphing over them by the cross."</div>
+                </div>
+                <p>The guilt was real. The debt was real. The legal notice was nailed to the cross — <em>paid in full</em>. The cross was not only forgiveness; it was victory over the accuser and hostile powers — a "mastermind" plan where what looked like defeat on Good Friday was the moment Satan realised he had underestimated the depth of God's love.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🙏 Christ Interceding Now</h2>
+                <p>More than legal victory: Christ is at the Father's right hand — seat of power — <strong>interceding for you</strong>. Not only when Paul wrote. Right now as you read this.</p>
+                <div class="quote-block">
+                    <p class="quote-text">If I could hear Christ praying for me in the next room, I would not fear a million armies. Yet distance makes no difference. He is praying for me.</p>
+                    <p class="quote-attribution">— Robert Murray M'Cheyne</p>
+                </div>
+                <p>Imagine hearing Jesus advocate for you in your usual place of prayer. You would walk out fearless. Distance changes nothing — he is still praying. The Holy Spirit and Jesus together intercede when we lack words.</p>
+                <p>When we sing <em>God Is For Us</em>, he is more for us than we realise.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🎵 "He Forgot the Refrain: Jesus Saves"</h2>
+                <p>Shane &amp; Shane's song pictures the devil singing an age-old verse — <em>cursed and gone astray</em> (Galatians) — conveniently skipping the refrain: <strong>Jesus saves</strong>.</p>
+                <p>The turn: embrace the accusation when it is true, then point it to the gospel — <em>You are right that I am not good enough to earn salvation. Thank you for reminding me — but you forgot the end. Jesus saves. He died for that. He rose. He intercedes.</em></p>
+                <div class="quote-block">
+                    <p class="quote-text">Be thou my shield and hiding-place; that, sheltered near thy side, I may my fierce accuser face, and tell him thou hast died.</p>
+                    <p class="quote-attribution">— John Newton (author of <em>Amazing Grace</em>)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="verses" class="tab-content">
+            <div class="content-card">
+                <h2>✝️ Scripture in This Sermon</h2>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:31 (NIV)</span>
+                    <div class="verse-text">"What, then, shall we say in response to these things? If God is for us, who can be against us?"</div>
+                    <div class="verse-context">The sermon's title and anchor — rhetorical climax of the chapter.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:32 (NIV)</span>
+                    <div class="verse-text">"He who did not spare his own Son, but gave him up for us all — how will he not also, along with him, graciously give us all things?"</div>
+                    <div class="verse-context">Argument from the greater to the lesser: if God gave the Son, he will not withhold what we need.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:33-34 (NIV)</span>
+                    <div class="verse-text">"Who will bring any charge against those whom God has chosen? It is God who justifies. Who then is the one who condemns? No one. Christ Jesus who died — more than that, who was raised to life — is at the right hand of God and is also interceding for us."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:1 (NIV)</span>
+                    <div class="verse-text">"Therefore, there is now no condemnation for those who are in Christ Jesus."</div>
+                    <div class="verse-context">Series foundation — where week 6's courtroom logic began.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Zechariah 3:1-4 (NIV)</span>
+                    <div class="verse-text">"Then he showed me Joshua the high priest standing before the angel of the Lord, and Satan standing at his right side to accuse him... 'Take off his filthy clothes.' ... 'See, I have taken away your sin, and I will put fine garments on you.'"</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Zechariah 3:8-9 (NIV)</span>
+                    <div class="verse-text">"I am going to bring my servant, the Branch... and I will remove the sin of this land in a single day."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Isaiah 50:8-9 (NIV)</span>
+                    <div class="verse-text">"He who vindicates me is near. Who then will bring charges against me? ... It is the Sovereign Lord who helps me. Who will condemn me?"</div>
+                    <div class="verse-context">Parallel language to Romans 8 — the servant's confidence becomes ours in Christ.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Colossians 2:13-15 (NIV)</span>
+                    <div class="verse-text">"He forgave us all our sins, having canceled the charge of our legal indebtedness... nailing it to the cross... triumphing over them by the cross."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Galatians 3:10 (NIV) — in worship song</span>
+                    <div class="verse-text">"For all who rely on the works of the law are under a curse, as it is written: 'Cursed is everyone who does not continue to do everything written in the Book of the Law.'"</div>
+                    <div class="verse-context">Referenced in Shane &amp; Shane's <em>Embracing Accusation</em> — the accusation's first verse without the refrain of grace.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courtroom" class="tab-content">
+            <div class="content-card">
+                <h2>⚖️ Three Courtroom Scenes</h2>
+                <p>Pastor Eric read Romans 8:31–34 as the fulfillment of legal imagery God planted centuries earlier. These three scenes unlock why accusations can be true yet powerless for those in Christ.</p>
+            </div>
+
+            <div class="court-grid">
+                <div class="court-card">
+                    <h3>1. Zechariah 3 — Guilty, No Defence</h3>
+                    <p><strong>Cast:</strong> Joshua (high priest), Satan (accuser at his right), the Lord.</p>
+                    <p><strong>Key detail:</strong> Filthy garments = real guilt, not fabricated charges.</p>
+                    <p><strong>God's move:</strong> Rebuke the accuser; remove sin; fine garments — grace before argument.</p>
+                    <p><strong>Forward look:</strong> The Branch will remove sin in a single day.</p>
+                </div>
+
+                <div class="court-card">
+                    <h3>2. Isaiah 50 — Confident Servant</h3>
+                    <p><strong>Cast:</strong> The suffering servant, accusers, the Sovereign Lord.</p>
+                    <p><strong>Key detail:</strong> "Who will bring charges? Who will condemn?" — spoken from suffering, not from smugness.</p>
+                    <p><strong>Christ connection:</strong> His vindication is ours when we are united with him.</p>
+                </div>
+
+                <div class="court-card">
+                    <h3>3. Colossians 2 — Debt Cancelled</h3>
+                    <p><strong>Cast:</strong> Believers, legal indebtedness, powers disarmed.</p>
+                    <p><strong>Key detail:</strong> The charge was real; it was nailed to the cross.</p>
+                    <p><strong>Today:</strong> Triumph + intercession — case closed, advocate active.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>🎬 The Mastermind Cross</h3>
+                <p>Eric compared God's plan to "cerebral heist" stories — <em>Ocean's Eleven</em>, <em>Shawshank</em>, <em>Prison Break</em> — where the hero is five steps ahead. On the cross, what looked like "they got him" was the moment the accuser discovered he had not grasped how far God would go to snatch his people from the fire.</p>
+                <div class="highlight-box">
+                    <strong>Side-by-side summary:</strong> Accusation (true) → Verdict (guilty) → Payment (Christ) → Resurrection (victory) → Intercession (ongoing) → Your response (live as if the case is closed).
+                </div>
+            </div>
+        </section>
+
+        <section id="application" class="tab-content">
+            <div class="content-card">
+                <h2>🎯 Five Freedoms If God Is For Us</h2>
+                <p>Pastor Eric closed with five outworkings — spiritually before God and relationally with others — when we actually believe the gospel is freeing news.</p>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-card-icon">🧘</div>
+                    <div class="app-card-title">1. Less Defensive</div>
+                    <p><strong>With God:</strong> Rest the case — whispers of unworthiness are spoken into an empty courtroom. <strong>With people:</strong> Receive correction without collapsing; apologise without protecting an image; stop needing to win every argument. "People secure before God stop needing to constantly secure themselves before people."</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">💛</div>
+                    <div class="app-card-title">2. Be For Others</div>
+                    <p>Emulate the grace shown you: encourage rather than threaten, celebrate rather than compare, be less suspicious and more life-giving — the way Jesus is shaping you as he advocates for you.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🌱</div>
+                    <div class="app-card-title">3. Fail Freely</div>
+                    <p>Failure is no longer proof God has left. Confess, learn, repent when needed — without your identity being destroyed. You are a new person, a little more free than before Christ entered the scene.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🤐</div>
+                    <div class="app-card-title">4. Lay Down Accusations</div>
+                    <p>Having received deep grace in filthy garments, soften accusations toward others. Humility replaces moral-superiority facades — we know what we were saved from.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🙏</div>
+                    <div class="app-card-title">5. Intercede for Others</div>
+                    <p>Treasure that Jesus and the Spirit intercede for you — then imitate him: fight for others in prayer the way God fights for you. Intercession is privilege and power, not afterthought.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="tab-content">
+            <div class="content-card">
+                <h2>💭 Reflection &amp; Discussion</h2>
+
+                <h3>📝 From the service</h3>
+                <ul class="reflection-list">
+                    <li>Which accusations against you feel the most believable, and how does the cross answer them differently than you normally would?</li>
+                    <li>Romans 8 says Christ is interceding for us right now. How might remembering that reshape the way you face failure, fear, or weakness this week?</li>
+                </ul>
+
+                <h3>🔍 Going deeper</h3>
+                <ul class="reflection-list">
+                    <li>In Zechariah 3, Joshua's guilt is real and his garments are filthy — yet God acts before he speaks. How does that differ from trying to "feel forgiven" only after you clean yourself up?</li>
+                    <li>When have you treated ongoing guilt as if the trial were still open? What would change if you lived as though court were adjourned?</li>
+                    <li>Place Isaiah 50:8-9 next to Romans 8:33-34. What does it mean that Christ's confidence before accusers becomes yours by union with him?</li>
+                    <li>Shane &amp; Shane's turn — "he forgot the refrain: Jesus saves" — what first verse does the enemy sing over you most often? What is the refrain you need to hear?</li>
+                    <li>Robert Murray M'Cheyne asked you to imagine Christ praying in the next room. Where do you pray? What fear would shrink if you believed he is there advocating?</li>
+                    <li>Which of the five freedoms is hardest for you — less defensive, being for others, failing freely, laying down accusations, or interceding?</li>
+                </ul>
+
+                <h3>🙏 Prayer prompts</h3>
+                <ul class="reflection-list">
+                    <li><strong>For God's posture:</strong> Father, show me that you are for me — not only when I perform, but when I have come up short.</li>
+                    <li><strong>For closed cases:</strong> Lord, when accusations return, remind me the debt is nailed to the cross and the courtroom is empty.</li>
+                    <li><strong>For intercession:</strong> Jesus, thank you that you pray for me now. Help me hear that truth above fear this week.</li>
+                    <li><strong>For others:</strong> Spirit, make me a person who is for others the way God has been for me.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="attribution" id="attribution" role="contentinfo">
+        <div class="attribution-short" aria-label="Attribution">ℹ️</div>
+        <div class="attribution-full">
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                Generated by LLM with supervision and polishing by
+                <a href="../index.html" target="_blank" rel="noopener noreferrer">benjaminficusmicrocarpa</a>.
+                <a href="../license.html" target="_blank" rel="noopener noreferrer">MIT License</a>
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/iecc-common.js"></script>
+</body>
+</html>

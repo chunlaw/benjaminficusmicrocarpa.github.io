@@ -90,6 +90,27 @@
   },
   "sermons": [
     {
+      "date": "2026-05-17",
+      "year": 2026,
+      "emoji": "⚖️",
+      "title": "Romans 8: God Is For Us",
+      "tags": ["romans-8", "faith", "christology", "grace", "trust", "hope", "prayer", "romans", "zechariah", "isaiah", "colossians", "galatians"],
+      "displayTags": [
+        { "type": "series", "label": "Romans 8" },
+        { "type": "theme", "label": "faith" },
+        { "type": "theme", "label": "christology" },
+        { "type": "topic", "label": "grace" },
+        { "type": "topic", "label": "trust" },
+        { "type": "topic", "label": "hope" },
+        { "type": "topic", "label": "prayer" },
+        { "type": "scripture", "label": "Romans 8" },
+        { "type": "scripture", "label": "Zechariah 3" },
+        { "type": "scripture", "label": "Isaiah 50" },
+        { "type": "scripture", "label": "Colossians 2" }
+      ],
+      "link": "2026-05-17-romans-8-god-is-for-us.html"
+    },
+    {
       "date": "2026-05-10",
       "year": 2026,
       "emoji": "🌹",
