@@ -90,6 +90,29 @@
   },
   "sermons": [
     {
+      "date": "2026-05-24",
+      "year": 2026,
+      "emoji": "💔",
+      "title": "Romans 8: No Separation",
+      "tags": ["romans-8", "faith", "christology", "love", "hope", "trust", "perseverance", "grace", "victory", "romans", "psalms", "ephesians", "matthew"],
+      "displayTags": [
+        { "type": "series", "label": "Romans 8" },
+        { "type": "theme", "label": "faith" },
+        { "type": "theme", "label": "christology" },
+        { "type": "theme", "label": "victory" },
+        { "type": "topic", "label": "love" },
+        { "type": "topic", "label": "hope" },
+        { "type": "topic", "label": "trust" },
+        { "type": "topic", "label": "perseverance" },
+        { "type": "topic", "label": "grace" },
+        { "type": "scripture", "label": "Romans 8" },
+        { "type": "scripture", "label": "Psalm 44" },
+        { "type": "scripture", "label": "Ephesians 5" },
+        { "type": "scripture", "label": "Matthew 19" }
+      ],
+      "link": "2026-05-24-romans-8-no-separation.html"
+    },
+    {
       "date": "2026-05-17",
       "year": 2026,
       "emoji": "⚖️",

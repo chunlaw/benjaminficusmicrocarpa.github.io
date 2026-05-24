@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romans 8: No Separation | Island ECC</title>
+    <meta name="description" content="Week 7 finale of the Romans 8 series: Pastor Tim seals the theological sandwich with Romans 8:35-39 — nothing can separate us from the love of Christ. Super conquerors held by his strength, not ours.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iecc-base.css">
+    <link rel="stylesheet" href="css/romans-8.css">
+    <style>
+        .hero-header {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            max-width: 950px;
+        }
+        .hero-title {
+            font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 4px 12px rgba(0,0,0,0.6);
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.2vw, 1.35rem);
+            font-family: 'Lora', serif;
+            font-style: italic;
+            color: var(--accent-light);
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        .hero-meta {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--romans-gold) 0%, var(--romans-warm) 100%);
+            color: #1a0a0e;
+            box-shadow: 0 4px 15px rgba(212, 160, 80, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 80, 0.6);
+        }
+        .btn-secondary {
+            background: rgba(245, 237, 232, 0.1);
+            color: var(--text-light);
+            border: 2px solid rgba(245, 237, 232, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        .btn-secondary:hover {
+            background: rgba(245, 237, 232, 0.2);
+            border-color: rgba(245, 237, 232, 0.5);
+        }
+        .tabs-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(18, 10, 14, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(107, 26, 42, 0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .tabs {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tabs::-webkit-scrollbar { display: none; }
+        .tab {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+        .main-content {
+            display: block;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--primary-light);
+        }
+        .content-card h2 {
+            color: var(--accent-light);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .content-card h3 {
+            color: var(--accent-light);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .content-card p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            opacity: 0.95;
+        }
+        .content-card ul, .content-card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .content-card li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+        .verse-card {
+            background: linear-gradient(135deg, rgba(107, 26, 42, 0.15) 0%, rgba(212, 160, 80, 0.08) 100%);
+            border-left: 4px solid var(--romans-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            font-family: 'Lora', serif;
+        }
+        .verse-ref {
+            color: var(--accent-light);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+        .verse-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            font-style: italic;
+            color: var(--text-light);
+        }
+        .verse-context {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-style: normal;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(245, 237, 232, 0.1);
+        }
+        .quote-block {
+            position: relative;
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(107, 26, 42, 0.1);
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+        }
+        .quote-block::before {
+            content: '\201C';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--romans-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+        .quote-text {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .quote-attribution {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(139, 32, 64, 0.12) 0%, rgba(107, 26, 42, 0.1) 100%);
+            border-left: 4px solid var(--romans-warm);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+        }
+        .highlight-box strong {
+            color: var(--accent-light);
+            font-size: 1.1rem;
+        }
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+        .flow-step {
+            background: var(--bg-card);
+            padding: 1.25rem 1.75rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(107, 26, 42, 0.25);
+            min-width: 140px;
+        }
+        .flow-step-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .flow-step-title {
+            font-weight: 600;
+            color: var(--accent-light);
+            font-size: 1rem;
+        }
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: var(--romans-gold);
+            flex-shrink: 0;
+        }
+        .sandwich-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .sandwich-layer {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-top: 3px solid var(--romans-gold);
+            text-align: center;
+        }
+        .sandwich-layer-num {
+            font-size: 0.85rem;
+            color: var(--romans-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .sandwich-layer-title {
+            color: var(--accent-light);
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+        .sandwich-layer-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .threat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .threat-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid var(--romans-crimson);
+        }
+        .threat-card h4 {
+            color: var(--accent-light);
+            margin: 0 0 0.5rem;
+            font-size: 1.1rem;
+        }
+        .threat-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .app-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid var(--romans-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 160, 80, 0.2);
+        }
+        .app-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .app-card-title {
+            font-size: 1.3rem;
+            color: var(--accent-light);
+            margin-bottom: 0.75rem;
+        }
+        .reflection-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .reflection-list li {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--romans-gold);
+            position: relative;
+            padding-left: 3rem;
+        }
+        .reflection-list li::before {
+            content: '⚖️';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            font-size: 1.2rem;
+        }
+        .sermon-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        @media (max-width: 768px) {
+            .hero-header {
+                height: auto;
+                min-height: 100svh;
+                overflow: visible;
+                padding: 3rem 0 2rem;
+            }
+            .hero-header .slideshow-container { min-height: 100%; }
+            .hero-content { padding: 1.5rem 1.25rem; }
+            .hero-title { font-size: 2rem; margin-bottom: 1rem; }
+            .hero-subtitle { font-size: 0.95rem; margin-bottom: 1rem; }
+            .hero-meta { font-size: 0.85rem; margin-bottom: 0.75rem; }
+            .sermon-tags-container { margin: 1rem 0; gap: 0.4rem; }
+            .hero-buttons { gap: 0.75rem; }
+            .btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+            .tabs { justify-content: flex-start; }
+            .tab { padding: 1rem 1.1rem; font-size: 0.85rem; }
+            .main-content { padding: 2rem 1rem; }
+            .content-card { padding: 1.5rem 1.25rem; border-radius: 12px; }
+            .content-card h2 { font-size: 1.5rem; }
+            .content-card h3 { font-size: 1.25rem; }
+            .app-grid, .sandwich-grid, .threat-grid { grid-template-columns: 1fr; }
+            .verse-card { padding: 1.25rem; }
+            .quote-block { padding: 1.5rem 1.25rem; }
+            .highlight-box { padding: 1.25rem; }
+            .reflection-list li { padding: 1.25rem 1.25rem 1.25rem 2.75rem; }
+            .flow-container { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+            .flow-step { min-width: unset; width: 100%; }
+        }
+        @media (max-width: 420px) {
+            .hero-header { padding: 2.5rem 0 1.5rem; }
+            .hero-title { font-size: 1.75rem; line-height: 1.25; }
+            .hero-subtitle { font-size: 0.9rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; justify-content: center; }
+            .main-content { padding: 1.5rem 0.75rem; }
+            .content-card { padding: 1.25rem 1rem; }
+        }
+        @media print {
+            .tabs-container, .hero-buttons, .attribution { display: none; }
+            .tab-content { display: block !important; page-break-after: always; }
+            body { background: white; color: black; }
+            .content-card { box-shadow: none; border: 1px solid #ccc; }
+        }
+        .tab:focus, .btn:focus {
+            outline: 3px solid var(--accent-light);
+            outline-offset: 2px;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body data-sermon-date="2026-05-24">
+    <header class="hero-header">
+        <div class="slideshow-container">
+            <div class="slideshow-slide active" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80')"></div>
+            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1920&q=80')"></div>
+        </div>
+
+        <div class="romans-accent-strip"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">⚖️ Romans 8:<br>No Separation</h1>
+            <p class="hero-subtitle">"Nothing in all creation will be able to separate us from the love of God that is in Christ Jesus our Lord." — Romans 8:39 (NIV)</p>
+            <div class="hero-meta">
+                📅 24 May 2026 | 🎤 Pastor Tim | 🏝️ Island ECC | 📖 Romans 8 Series (Week 7 of 7 — Finale)
+            </div>
+            <div class="sermon-tags-container" id="sermon-tags"></div>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/watch?v=yLJ3YOk8pp0" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    ▶️ Watch Original Sermon
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    📚 View All Sermons
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" role="navigation" aria-label="Sermon sections">
+        <div class="tabs">
+            <div class="tab active" data-tab="overview" role="tab" aria-selected="true">📋 Overview</div>
+            <div class="tab" data-tab="sermon" role="tab" aria-selected="false">📖 Main Sermon</div>
+            <div class="tab" data-tab="verses" role="tab" aria-selected="false">✝️ Bible Verses</div>
+            <div class="tab" data-tab="sandwich" role="tab" aria-selected="false">🥪 The Sandwich</div>
+            <div class="tab" data-tab="application" role="tab" aria-selected="false">🎯 Three Truths</div>
+            <div class="tab" data-tab="reflection" role="tab" aria-selected="false">💭 Reflection</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="overview" class="tab-content active">
+            <div class="content-card">
+                <h2>📋 Sermon Overview</h2>
+                <p><strong>Central Theme:</strong> Paul closes Romans 8 — and the entire series — with the final ingredient of his theological sandwich: <em>no separation</em>. The chapter began with no condemnation; it ends with the unbreakable promise that nothing can tear us from Christ's love. Our security rests in his grip on us, not our grip on him.</p>
+
+                <div class="highlight-box">
+                    <strong>Series finale:</strong> Baptism Sunday at Island ECC celebrated four Island Youth students publicly declaring their faith — a fitting picture of being washed, made new, and held securely in Christ. Pastor Tim seals seven weeks of Romans 8 teaching with Paul's grand fireworks finale: we are <strong>super conquerors</strong> (<em>hupernikomen</em>) held by a love stronger than trouble, hardship, death, and every power in creation.
+                </div>
+
+                <h3>📖 Key Passages</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:35-39 (NIV)</span>
+                    <div class="verse-text">"Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ... No, in all these things we are more than conquerors through him who loved us. For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."</div>
+                </div>
+
+                <h3>🌟 Main Takeaways</h3>
+                <ol>
+                    <li><strong>Christ's love is sacrificial action</strong> — not a feeling, but the incarnation of God's covenant <em>hesed</em> love, proven at the cross (Romans 5:8).</li>
+                    <li><strong>Security is in his strength, not ours</strong> — we are held like a magnet grips metal; our love for Christ will always fall short, but his love for us never will.</li>
+                    <li><strong>Feelings can lie</strong> — suffering may whisper "God has left you," but Paul says we are more than conquerors <em>in</em> the middle of hardship, not before or after it.</li>
+                    <li><strong><em>Hupernikomen</em> — super conquerors</strong> — Paul coins a word used only here: hyper-victorious through him who loved us (past tense).</li>
+                    <li><strong>Paul lists every threat imaginable</strong> — from daily pressure to death itself — and declares none can sever what God joined.</li>
+                    <li><strong>Condemnation is silenced, separation is impossible, love is unbreakable</strong> — the three truths to carry as the series closes.</li>
+                    <li><strong>To be fully known and fully loved</strong> — Tim Keller's definition of what we most deeply hope for, and what God gives us in Christ.</li>
+                </ol>
+
+                <h3>📐 Sermon Structure</h3>
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🥪</div>
+                        <div class="flow-step-title">Series recap</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">❤️</div>
+                        <div class="flow-step-title">Love of Christ</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🧲</div>
+                        <div class="flow-step-title">His strength</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🏆</div>
+                        <div class="flow-step-title">Super conquerors</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🎆</div>
+                        <div class="flow-step-title">Grand finale</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sermon" class="tab-content">
+            <div class="content-card">
+                <h2>🥪 Sealing the Theological Sandwich</h2>
+                <p>Pastor Tim opened on Baptism Sunday — a day when four Island Youth students publicly declared their faith in the waters of baptism. It was a fitting prelude to Romans 8's closing promise: <em>nothing can separate us from the love of Christ.</em></p>
+                <p>Over seven weeks the church has been building Paul's "theological sandwich" in Romans 8. Tim compared it to crafting a Subway sandwich as a teenager working at TCBY — layer by layer, ingredient by ingredient. Today he adds the final topping and seals it shut, like a Breville sandwich maker that heats and presses the bread so nothing falls out.</p>
+                <p>Paul's argument throughout the chapter builds through a series of rhetorical questions — each one closing a door on anything that could undo what God has done. The finale asks the question every believer has wrestled with at some point: <strong>Who shall separate us from the love of Christ?</strong></p>
+            </div>
+
+            <div class="content-card">
+                <h2>❓ The Central Question</h2>
+                <div class="quote-block">
+                    <p class="quote-text">The central question of the Christian life is one that prompts all our doubts and worries and tensions: Is there anyone or anything that can separate me from Christ's love for me?</p>
+                    <p class="quote-attribution">— Tim Keller, on Romans 8</p>
+                </div>
+                <p>We see this cry throughout the Psalms — laments wondering whether God has departed, whether we are alone. Paul dives deep to give a profound argument and encouragement. But first we must ask: what is the <em>love of Christ</em>?</p>
+                <p>We can all probably remember that Jesus loves us. But what does that love truly mean? N.T. Wright notes that beneath Paul's comfort is a revolutionary theology of incarnation — God's covenant faithfulness (<em>hesed</em>) made flesh in Christ. First-century readers knew the Old Testament's picture of God's unconditional love for his people. In Christ, that love becomes embodied, physical, and active.</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 5:8 (NIV)</span>
+                    <div class="verse-text">"But God demonstrates his own love for us in this: While we were still sinners, Christ died for us."</div>
+                </div>
+                <p>Love is not a feeling — it is action. Christ loved us by sacrificing for us, taking on our sin. Paul uses marriage as a picture in Ephesians 5 — Christ loved the church and gave himself up for her. And when Paul asks who shall <em>separate</em> us, he uses the same Greek word Jesus uses in Matthew 19 about marriage: <em>what God has joined together, let no one separate.</em></p>
+            </div>
+
+            <div class="content-card">
+                <h2>🧲 Held by His Strength, Not Ours</h2>
+                <p>When we think about loving Christ, we often think: <em>I need to love God just a little bit more. I need to try harder.</em> But the key to this passage is where the love comes <em>from</em> — Christ's strength, not ours. Our security is not in the strength of our love for Christ, but in Christ's love for us.</p>
+                <div class="quote-block">
+                    <p class="quote-text">That love is the magnet that has taken hold of us.</p>
+                    <p class="quote-attribution">— D. Martyn Lloyd-Jones</p>
+                </div>
+                <p>Tim shared a story from a family mission trip to the Philippines. On the last day the team rode a banana boat in strong ocean currents. When everyone fell off, Tim grabbed the boat and another person — like Captain America holding a helicopter — but his hand slipped and they drifted away. He couldn't compete with the current.</p>
+                <p>That is us when we think: <em>If I just prayed more, studied harder, believed more, read my Bible more — then God would honour that.</em> But it's not our strength. Christ is the magnet holding on to us. We don't have to try so hard, because we will always fail if we try in our own power.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>📋 The List — Can Any of These Separate Us?</h2>
+                <p>Paul builds a list from bad to worse — all things he personally experienced as an apostle:</p>
+                <ul>
+                    <li><strong>Trouble</strong> — life pressing in: anxiety, stress, bills, finances, medical issues squeezing you.</li>
+                    <li><strong>Hardship</strong> — cornered with no way out: job loss, diagnosis, financial crisis.</li>
+                    <li><strong>Persecution</strong> — living counter-culturally for Jesus and facing pushback.</li>
+                    <li><strong>Famine</strong> — not knowing how you'll make it through the month.</li>
+                    <li><strong>Nakedness</strong> — complete vulnerability and shame, exposed before others.</li>
+                    <li><strong>Danger</strong> — violence, travel risks, political turmoil in the world.</li>
+                    <li><strong>Sword</strong> — death itself, the thing every human tends to fear most.</li>
+                </ul>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:36 / Psalm 44:22 (NIV)</span>
+                    <div class="verse-text">"As it is written: 'For your sake we face death all day long; we are considered as sheep to be slaughtered.'"</div>
+                    <div class="verse-context">A psalm of lament — faithful to God, yet crushed. Sheep are helpless; they don't fight back. Paul uses this graphic imagery before his answer.</div>
+                </div>
+                <p>Can any of these separate us from the love of Christ? Paul's answer:</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:37 (NIV)</span>
+                    <div class="verse-text">"No, in all these things we are more than conquerors through him who loved us."</div>
+                </div>
+                <p>Notice: <em>in</em> all these things — not before or after, but in the middle of suffering and pain. Christ has already shown his love (past tense), so we can trust it. And when we don't feel victorious, our feelings may tell a story that isn't true — that God doesn't love us or has separated from us. The truth is what Paul declares.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🏆 Super Conquerors — <em>Hupernikomen</em></h2>
+                <p>The Greek word Paul coins here — used only this once in all of Scripture — is <em>hupernikomen</em>: <em>hyper</em> (over, beyond, exceedingly) + <em>nikeo</em> (to conquer, to win). We are not merely conquerors; we are <strong>super conquerors</strong>, super victorious.</p>
+                <p>Tim playfully connected this to the Nike brand — victory is in the name. Jesus used everyday examples (coins, mustard seeds, bread and wine); Tim used the ubiquitous swoosh as a modern reminder. Every time you see that logo, remember: <em>I am super victorious. I am more than a conqueror. That is what God has declared me to be — in the midst of all these troubles.</em></p>
+            </div>
+
+            <div class="content-card">
+                <h2>🎆 The Grand Finale</h2>
+                <p>Like a fireworks show where everything goes off at once, Paul builds even more assurance:</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:38-39 (NIV)</span>
+                    <div class="verse-text">"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."</div>
+                </div>
+                <p>Paul runs out of categories and adds: <em>nor anything else in all creation.</em> Whatever else. Nothing in the world. The word <em>convinced</em> means he has been convinced and continues to be convinced — an active, ongoing certainty. Paul is convinced. The question for us: <strong>Are we?</strong></p>
+            </div>
+
+            <div class="content-card">
+                <h2>🌊 Baby 81 — A Shadow of God's Love</h2>
+                <p>Tim closed with the story of Abilash ("Baby 81") from Sri Lanka. In the 2004 Indian Ocean tsunami, two-month-old Abilash was ripped from his mother Janitha's arms and swept away. Rescuers found him in mud; with documents destroyed, nine families claimed him until DNA testing proved his identity.</p>
+                <p>The family's relief turned to persecution when neighbours resented their international attention. Abilash grew up teased as "tsunami baby." Yet his father never let him forget how special he was — <em>you're the only person in the whole world with that experience.</em> Parental love persisted through every separation attempt.</p>
+                <p>As beautiful as that story is, Tim said, it is only a fraction — a shadow — of how strongly God loves us. No matter what storms we face, there is a God who loves us through all of them. Paul is convinced nothing can separate that love from us. We need to hold on to that as well.</p>
+            </div>
+        </section>
+
+        <section id="verses" class="tab-content">
+            <div class="content-card">
+                <h2>✝️ Scripture in This Sermon</h2>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:35 (NIV)</span>
+                    <div class="verse-text">"Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?"</div>
+                    <div class="verse-context">The sermon's central question — Paul lists every threat he and his readers would face.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:36 (NIV)</span>
+                    <div class="verse-text">"As it is written: 'For your sake we face death all day long; we are considered as sheep to be slaughtered.'"</div>
+                    <div class="verse-context">Quoted from Psalm 44 — a lament of faithful suffering before Paul's triumphant answer.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:37 (NIV)</span>
+                    <div class="verse-text">"No, in all these things we are more than conquerors through him who loved us."</div>
+                    <div class="verse-context">Paul's coined word <em>hupernikomen</em> — super conquerors through Christ's past-tense love.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:38-39 (NIV)</span>
+                    <div class="verse-text">"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."</div>
+                    <div class="verse-context">The grand fireworks finale — Paul exhausts every category of creation.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:1 (NIV)</span>
+                    <div class="verse-text">"Therefore, there is now no condemnation for those who are in Christ Jesus."</div>
+                    <div class="verse-context">Where the chapter — and the series — began. Paul circles back: no condemnation, no separation.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 8:31-34 (NIV) — series context</span>
+                    <div class="verse-text">"If God is for us, who can be against us? ... Who will bring any charge against those whom God has chosen? It is God who justifies. Who then is the one who condemns? No one. Christ Jesus who died — more than that, who was raised to life — is at the right hand of God and is also interceding for us."</div>
+                    <div class="verse-context">Recapped from last week — Paul's rhetorical questions leading to the separation question.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Romans 5:8 (NIV)</span>
+                    <div class="verse-text">"But God demonstrates his own love for us in this: While we were still sinners, Christ died for us."</div>
+                    <div class="verse-context">What Christ's love truly means — sacrificial action, not mere sentiment.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Ephesians 5:25 (NIV)</span>
+                    <div class="verse-text">"Husbands, love your wives, just as Christ loved the church and gave himself up for her."</div>
+                    <div class="verse-context">Marriage as a picture of union that should not be separated.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Matthew 19:6 (NIV)</span>
+                    <div class="verse-text">"So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."</div>
+                    <div class="verse-context">Same Greek word for "separate" that Paul uses in Romans 8:35 — God-joined union.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Psalm 44:22 (NIV)</span>
+                    <div class="verse-text">"Yet for your sake we face death all day long; we are considered as sheep to be slaughtered."</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sandwich" class="tab-content">
+            <div class="content-card">
+                <h2>🥪 The Romans 8 Theological Sandwich</h2>
+                <p>Pastor Tim recapped seven weeks of teaching as layers of a sandwich — from the foundation of no condemnation to today's sealed finale. Each ingredient builds on the last until Paul presses it all shut with the promise of no separation.</p>
+            </div>
+
+            <div class="sandwich-grid">
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 1 — Foundation</div>
+                    <div class="sandwich-layer-title">No Condemnation</div>
+                    <div class="sandwich-layer-desc">Romans 8:1 — fallen, broken, sinful; the gift of God is eternal life. Nothing we can do to earn it.</div>
+                </div>
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 2</div>
+                    <div class="sandwich-layer-title">Governed by the Spirit</div>
+                    <div class="sandwich-layer-desc">Flesh vs Spirit — disordered desires transformed into godly desires when we live by the Spirit.</div>
+                </div>
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 3</div>
+                    <div class="sandwich-layer-title">Adopted by God</div>
+                    <div class="sandwich-layer-desc">No longer slaves but children — co-heirs with Christ and all the benefits of God's family.</div>
+                </div>
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 4</div>
+                    <div class="sandwich-layer-title">Liberated from Bondage</div>
+                    <div class="sandwich-layer-desc">Creation groaning; present suffering doesn't compare to eternal glory ahead.</div>
+                </div>
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 5</div>
+                    <div class="sandwich-layer-title">Called for His Purpose</div>
+                    <div class="sandwich-layer-desc">Romans 8:28 — God works all things for good for those who love him. Bad things can be worked for good.</div>
+                </div>
+                <div class="sandwich-layer">
+                    <div class="sandwich-layer-num">Layer 6</div>
+                    <div class="sandwich-layer-title">God Is For Us</div>
+                    <div class="sandwich-layer-desc">Romans 8:31-34 — if God is for us, who can be against us? The case is closed.</div>
+                </div>
+                <div class="sandwich-layer" style="border-top-color: var(--romans-warm);">
+                    <div class="sandwich-layer-num">Layer 7 — Sealed</div>
+                    <div class="sandwich-layer-title">No Separation</div>
+                    <div class="sandwich-layer-desc">Romans 8:35-39 — nothing can separate us from the love of Christ. The sandwich is sealed.</div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>❓ Paul's Rhetorical Questions</h3>
+                <p>As Paul closes his argument, he asks a cascade of questions — each shutting a door on anything that could undo God's work:</p>
+                <div class="flow-container">
+                    <div class="flow-step">
+                        <div class="flow-step-icon">💪</div>
+                        <div class="flow-step-title">Who can be against us?</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">⚖️</div>
+                        <div class="flow-step-title">Who brings a charge?</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">🔇</div>
+                        <div class="flow-step-title">Who condemns?</div>
+                    </div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step">
+                        <div class="flow-step-icon">💔</div>
+                        <div class="flow-step-title">Who separates us?</div>
+                    </div>
+                </div>
+                <p>Each answer returns to the beginning: <strong>no condemnation</strong> for those in Christ. The separation question seals the whole argument — like a sandwich maker pressing the bread shut so no ingredient falls out.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>🚫 Threats That Cannot Separate Us</h3>
+                <div class="threat-grid">
+                    <div class="threat-card">
+                        <h4>😰 Trouble</h4>
+                        <p>Pressures of life — anxiety, bills, medical issues squeezing you.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>🧱 Hardship</h4>
+                        <p>Cornered with no visible way out — job, health, finances.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>✝️ Persecution</h4>
+                        <p>Pushback for living counter-culturally as a follower of Jesus.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>🍞 Famine</h4>
+                        <p>Not knowing how you'll provide for next month.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>😳 Nakedness</h4>
+                        <p>Complete vulnerability, shame, exposure before others.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>⚠️ Danger</h4>
+                        <p>Violence, travel risks, political turmoil in the world.</p>
+                    </div>
+                    <div class="threat-card">
+                        <h4>⚔️ Sword</h4>
+                        <p>Death itself — the ultimate fear of every human being.</p>
+                    </div>
+                    <div class="threat-card" style="border-left-color: var(--romans-gold);">
+                        <h4>🎆 Everything Else</h4>
+                        <p>Death, life, angels, demons, present, future, powers, height, depth — and anything else Paul can think of.</p>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <strong>Paul's answer to all of it:</strong> No. In all these things we are more than conquerors through him who loved us. Nothing in all creation can separate us from the love of God in Christ Jesus our Lord.
+                </div>
+            </div>
+        </section>
+
+        <section id="application" class="tab-content">
+            <div class="content-card">
+                <h2>🎯 Three Truths to Hold Onto</h2>
+                <p>Pastor Tim closed the series with three truths to carry into everyday life — the sealed sandwich we take with us as Romans 8 ends and a new series ("Tuning In") begins next week.</p>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-card-icon">🔇</div>
+                    <div class="app-card-title">1. Condemnation Is Silenced</div>
+                    <p>Romans 8:1 — there is now no condemnation for those in Christ Jesus. No shame. The guilty verdict is overturned. We are innocent and freed. It's okay to feel convicted — a healthy sting that leads to repentance — but you are <strong>not condemned</strong>. None of us are condemned anymore.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">🧲</div>
+                    <div class="app-card-title">2. Separation Is Impossible</div>
+                    <p>God's got a hold on us — not the other way around. His love will never let go. We don't hold on to Christ by our strength (like Tim on the banana boat); Christ holds on to us like a magnet. Trust that nothing can separate you from his love.</p>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-card-icon">💎</div>
+                    <div class="app-card-title">3. God's Love Is Unbreakable</div>
+                    <p>The one love we can always trust — it will never go away. Tim Keller: to be loved but not known is superficial; to be known and not loved is our greatest fear; <strong>to be fully known and fully loved is what it means to be loved by God.</strong> That is what Paul assures us we have.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>👟 Live as Super Conquerors</h3>
+                <p>Tim's practical challenge: as you walk through the city this week, let everyday reminders — a Nike swoosh, a song, a prayer, Scripture, brothers and sisters — reinforce the truth: <em>no one can condemn you; nothing can separate you from the love of God. Live that way every day.</em></p>
+                <div class="highlight-box">
+                    <strong>When feelings lie:</strong> Suffering may whisper that God has left you. Identify the lie. Hold on to what is true — you are super victorious in the midst of hardship, held by Christ's love, not your own strength.
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="tab-content">
+            <div class="content-card">
+                <h2>💭 Reflection &amp; Discussion</h2>
+
+                <h3>📝 From the service</h3>
+                <ul class="reflection-list">
+                    <li>Where in your life are you most tempted to believe that trouble, hardship, failure, or fear has separated you from the love of God?</li>
+                    <li>What would change this week if you truly lived convinced that Christ's love is holding onto you, rather than the other way around?</li>
+                </ul>
+
+                <h3>🔍 Going deeper</h3>
+                <ul class="reflection-list">
+                    <li>Tim Keller calls Romans 8:35 the central question of the Christian life. When have you asked it most urgently? What answer did your feelings give vs. what Paul declares?</li>
+                    <li>Paul says we are more than conquerors <em>in</em> all these things — not before or after. How does that reshape the way you view current suffering?</li>
+                    <li>Explore the Greek <em>hupernikomen</em>. What difference does it make that Paul uses a word for "super victory" rather than mere survival?</li>
+                    <li>Christ's love is sacrificial action (Romans 5:8), not a feeling. How does that change the way you relate to God on hard days when you don't "feel" loved?</li>
+                    <li>Tim shared the banana boat story — trying to hold on in his own strength. Where are you striving to earn or maintain God's love rather than resting in his grip?</li>
+                    <li>The Baby 81 story shows human love persisting through separation attempts. How does even that shadow point to the greater, unbreakable love of God?</li>
+                    <li>Tim Keller: "To be fully known and fully loved is what it means to be loved by God." What would it look like to live as though God fully knows you — and fully loves you anyway?</li>
+                </ul>
+
+                <h3>🙏 Prayer prompts</h3>
+                <ul class="reflection-list">
+                    <li><strong>For assurance:</strong> Lord, convince me — actively and ongoing — that nothing can separate me from your love in Christ Jesus.</li>
+                    <li><strong>When feelings lie:</strong> Father, when hardship whispers that you have left me, remind me of the truth Paul declares: I am held by your strength, not mine.</li>
+                    <li><strong>For the baptized:</strong> God, thank you for the students baptised today. Help them — and all of us — fight the lies and live in the truth that nothing can separate us from your love.</li>
+                    <li><strong>For daily living:</strong> Jesus, as I walk through this week, let me live as a super conqueror — head held high, knowing there is no condemnation and no separation.</li>
+                </ul>
+
+                <h3>⚡ Challenge for the week</h3>
+                <ul class="reflection-list">
+                    <li>Pick one everyday trigger (a logo, a commute, a morning routine) and use it as a reminder: <em>I am more than a conqueror. Christ's love is holding me.</em> Do this every time you notice it for seven days.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="attribution" id="attribution" role="contentinfo">
+        <div class="attribution-short" aria-label="Attribution">ℹ️</div>
+        <div class="attribution-full">
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                Generated by LLM with supervision and polishing by
+                <a href="../index.html" target="_blank" rel="noopener noreferrer">benjaminficusmicrocarpa</a>.
+                <a href="../license.html" target="_blank" rel="noopener noreferrer">MIT License</a>
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/iecc-common.js"></script>
+</body>
+</html>

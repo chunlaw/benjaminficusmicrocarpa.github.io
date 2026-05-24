@@ -48,6 +48,7 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 ### April-May 2026 - Easter / Romans 8 Series
 | Date | Sermon | Routing | Tags | External CSS/JS |
 |------|--------|---------|------|-----------------|
+| 2026-05-24 | Romans 8: No Separation | ✅ | ✅ | ✅ |
 | 2026-05-17 | Romans 8: God Is For Us | ✅ | ✅ | ✅ |
 | 2026-05-10 | Romans 8: All Things Together For Good? | ✅ | ✅ | ✅ |
 | 2026-05-03 | Romans 8: Liberated from Bondage | ✅ | ✅ | ✅ |
@@ -99,7 +100,7 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 |------|--------|---------|------|-----------------|
 | 2024-10-27 | How We Make Sense of Life | ✅ | ✅ | ✅ |
 
-**Total Fully Implemented: 29 sermons** (with external CSS/JS)
+**Total Fully Implemented: 30 sermons** (with external CSS/JS)
 
 ---
 
@@ -379,9 +380,9 @@ accordionHeaders.forEach(header => {
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| Fully Implemented (all features) | 29 | 41.4% |
-| Missing All Features | 41 | 58.6% |
-| **Total** | **70** | **100%** |
+| Fully Implemented (all features) | 30 | 42.3% |
+| Missing All Features | 41 | 57.7% |
+| **Total** | **71** | **100%** |
 
 ---
 
@@ -413,7 +414,8 @@ To migrate remaining sermons:
 
 ---
 
-*Last updated: 2026-05-17*
+*Last updated: 2026-05-24*
+*Added 2026-05-24 (Romans 8: No Separation) — seventh and final sermon in the Romans 8 series with Pastor Tim, on Baptism Sunday. Romans 8:35-39, 8:37, 8:1, 8:31-34; Romans 5:8; Ephesians 5:25; Matthew 19:6; Psalm 44:22 — series finale sealing the theological sandwich; Tim Keller on the central question of the Christian life; Christ's love as sacrificial incarnation of hesed; security in his strength not ours (Lloyd-Jones magnet quote; banana boat Philippines story); list of threats (trouble, hardship, persecution, famine, nakedness, danger, sword); hupernikomen super conquerors; Nike swoosh illustration; feelings vs truth in suffering; Baby 81 / Abilash tsunami story from Sri Lanka; three closing truths (condemnation silenced, separation impossible, love unbreakable); Tim Keller on fully known and fully loved. Custom **The Sandwich** tab (7-layer series recap + rhetorical questions + threat grid). Reuses `css/romans-8.css`. `sermons_data.json` + `key_scriptures.json` entries.*
 *Added 2026-05-17 (Romans 8: God Is For Us) — sixth sermon in the Romans 8 series with Pastor Eric. Romans 8:31-34, 8:1; Zechariah 3:1-4, 3:8-9; Isaiah 50:8-9; Colossians 2:13-15; Galatians 3:10 (in worship song) — courtroom climax where accusations may be true but no longer relevant; Joshua the high priest in filthy garments with no defence; Satan as accuser; the Branch removing sin in a single day; united with Christ his vindication is ours; empty courtroom / case adjourned / no double jeopardy; cross as mastermind victory over powers; Christ interceding at the Father's right hand now; Shane & Shane "Embracing Accusation" and "he forgot the refrain: Jesus saves"; John Newton and Robert Murray M'Cheyne quotes; five freedoms (less defensive, be for others, fail freely, lay down accusations, intercede). Custom **Courtroom Drama** tab. Reuses `css/romans-8.css`. `sermons_data.json` + key_scriptures.json entries.*
 *Added 2026-05-10 (Romans 8: All Things Together For Good?) — fifth sermon in the Romans 8 series with Pastor Brett, on Mother's Day. Romans 8:28-30, 8:35, 8:18, 8:22; John 16:33; 2 Corinthians 11:24-28; 2 Corinthians 7:10; Proverbs 20:30; James 1:27 — Paul's most famous declaration; "we know" as Paul's 13× definitive declaration in Romans; Greek `thlipsis` (anguish, the same word for Judas's betrayal); life-is-hard / God-is-good as coexisting truths, not alternating; God redeems all things rather than declaring all things good; the golden chain (foreknew → predestined → called → justified → glorified) with "glorified" in the past tense; three ways God redeems all things for good — (1) makes us more like Jesus (sanctification, the chisel), (2) grants spiritual intimacy (godly vs worldly sorrow, the inverse prayer-circumstance chart), (3) gives us His glory (eternal perspective). Stories: Pastor Brett's mom releasing him to Hong Kong in 2001, the sixth-grade spelling-bee defeat with classroom applause, Aleksandr Solzhenitsyn's `Bless you, prison`, C. S. Lewis's `Pain is God's megaphone`, St. Teresa's `one night in a bad motel`, and Ben Sasse's 60 Minutes interview after a stage 4 pancreatic cancer diagnosis (`There are no maverick molecules in the universe`). Reuses `css/romans-8.css`. Custom **Three Ways God Redeems** tab. `sermons_data.json` adds new sermon entry. `key_scriptures.json` +3 entries (Rom 8:28, Rom 8:29-30, John 16:33).*
 *Added 2026-05-03 (Romans 8: Liberated from Bondage) — fourth sermon in the Romans 8 series with Pastor Kevin. Romans 8:18–27; Genesis 3:17–19; Psalm 96:6–8; Galatians 2:20 — creation groaning under the curse, cosmic redemption when the children of God are revealed, the Stockdale Paradox (circumstantial hope vs ultimate hope), Jonathan Edwards quote on nature groaning, the Spirit's constant intercession through wordless groans, Tim Keller quote on God answering prayers, Pastor Kevin's personal story of prayer shifting from a corner office to young-adult ministry in Hong Kong. Reuses `css/romans-8.css`. Custom **Two Helps** tab (hope of redemption + prayer of the Spirit). `sermons_data.json` adds new sermon entry. `key_scriptures.json` +4 entries (Rom 8:18, 8:21, 8:24–25, 8:26–27).*
