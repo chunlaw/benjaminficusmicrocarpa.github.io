@@ -18,7 +18,8 @@
       { "id": "chinese-new-year", "emoji": "🏮", "label": "Chinese New Year" },
       { "id": "the-way", "emoji": "🛤️", "label": "The Way" },
       { "id": "easter", "emoji": "✝️", "label": "Easter" },
-      { "id": "romans-8", "emoji": "⚖️", "label": "Romans 8" }
+      { "id": "romans-8", "emoji": "⚖️", "label": "Romans 8" },
+      { "id": "tuning-in", "emoji": "📻", "label": "Tuning In" }
     ],
     "themes": [
       { "id": "worship", "emoji": "✨", "label": "Worship" },
@@ -89,6 +90,26 @@
     ]
   },
   "sermons": [
+    {
+      "date": "2026-05-31",
+      "year": 2026,
+      "emoji": "📻",
+      "title": "Tuning In: Hearing the Voice of God",
+      "tags": ["tuning-in", "faith", "prayer", "discipleship", "obedience", "identity", "john", "psalms", "exodus", "hebrews", "ephesians", "proverbs"],
+      "displayTags": [
+        { "type": "series", "label": "Tuning In" },
+        { "type": "theme", "label": "faith" },
+        { "type": "topic", "label": "prayer" },
+        { "type": "topic", "label": "discipleship" },
+        { "type": "topic", "label": "obedience" },
+        { "type": "theme", "label": "identity" },
+        { "type": "scripture", "label": "John 10" },
+        { "type": "scripture", "label": "Psalm 40" },
+        { "type": "scripture", "label": "Exodus 21" },
+        { "type": "scripture", "label": "Proverbs 3" }
+      ],
+      "link": "2026-05-31-tuning-in-hearing-the-voice-of-god.html"
+    },
     {
       "date": "2026-05-24",
       "year": 2026,

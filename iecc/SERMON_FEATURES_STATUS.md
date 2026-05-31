@@ -6,7 +6,7 @@ This document tracks which sermons have implemented:
 3. **External CSS/JS** - Separated stylesheets and scripts for maintainability
 
 ## Index Page Features
-- **Random Scripture Display** - Hero header shows a random key scripture from `key_scriptures.json` on each page load, with link to source sermon (51 scriptures total)
+- **Random Scripture Display** - Hero header shows a random key scripture from `key_scriptures.json` on each page load, with link to source sermon (95 scriptures total)
 
 ## CSS/JS Architecture
 
@@ -20,6 +20,7 @@ This document tracks which sermons have implemented:
 - `css/the-way.css` - Theme styles for The Way series (purple/rose Lent palette, path strip motif, connection cards for cross-references)
 - `css/easter.css` - Theme styles for Easter (midnight-to-dawn palette, sunrise gold accents, response cards, evidence grid)
 - `css/romans-8.css` - Theme styles for Romans 8 series (deep crimson & warm gold palette, contrast cards for law-vs-grace comparisons)
+- `css/tuning-in.css` - Theme styles for Tuning In series (vintage radio dial / FM633 palette, channel cards, voice contrast, broadcast quotes, frequency bar)
 - `js/iecc-common.js` - Common JavaScript functionality (tabs, accordions, slideshows, tag loading)
 - `key_scriptures.json` - Collection of key scriptures from all sermons (used for random scripture display on index page)
 
@@ -44,6 +45,11 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 | 2025-12-14 | Choosing Joy in the Struggle | ✅ | ✅ | ✅ |
 | 2025-12-21 | Rejoice in Opposition | ✅ | ✅ | ✅ |
 | 2025-12-28 | Rejoice in Anticipation | ✅ | ✅ | ✅ |
+
+### May-June 2026 - Tuning In Series
+| Date | Sermon | Routing | Tags | External CSS/JS |
+|------|--------|---------|------|-----------------|
+| 2026-05-31 | Tuning In: Hearing the Voice of God | ✅ | ✅ | ✅ |
 
 ### April-May 2026 - Easter / Romans 8 Series
 | Date | Sermon | Routing | Tags | External CSS/JS |
@@ -100,7 +106,7 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 |------|--------|---------|------|-----------------|
 | 2024-10-27 | How We Make Sense of Life | ✅ | ✅ | ✅ |
 
-**Total Fully Implemented: 30 sermons** (with external CSS/JS)
+**Total Fully Implemented: 31 sermons** (with external CSS/JS)
 
 ---
 
@@ -380,9 +386,9 @@ accordionHeaders.forEach(header => {
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| Fully Implemented (all features) | 30 | 42.3% |
-| Missing All Features | 41 | 57.7% |
-| **Total** | **71** | **100%** |
+| Fully Implemented (all features) | 31 | 43.1% |
+| Missing All Features | 41 | 56.9% |
+| **Total** | **72** | **100%** |
 
 ---
 
@@ -414,6 +420,8 @@ To migrate remaining sermons:
 
 ---
 
+*Last updated: 2026-05-31*
+*Added 2026-05-31 (Tuning In: Hearing the Voice of God) — Week 1 of 5 with Pastor Brett. John 10:27, 10:1-5, Psalm 40:6-8, Exodus 21:5-6, Proverbs 3:5-6, Ephesians 2:19, Hebrews 13:20-21 — FM633 radio intro, acoustic profile (China 1991 / George & Helen), hearing God as life's most desperate need, three reasons (child / protection / success), kara & pierced ear, sheepfold & competing voices, family "inside language." New `css/tuning-in.css` (vintage radio dial: Fraunces + Libre Franklin + Lora). Custom **Four Frequencies** tab (John 10:27 channel cards). `voice-contrast-grid`, `broadcast-quote`, `series-roadmap`. `sermons_data.json` + `key_scriptures.json` entries. New series tag: tuning-in.*
 *Last updated: 2026-05-24*
 *Added 2026-05-24 (Romans 8: No Separation) — seventh and final sermon in the Romans 8 series with Pastor Tim, on Baptism Sunday. Romans 8:35-39, 8:37, 8:1, 8:31-34; Romans 5:8; Ephesians 5:25; Matthew 19:6; Psalm 44:22 — series finale sealing the theological sandwich; Tim Keller on the central question of the Christian life; Christ's love as sacrificial incarnation of hesed; security in his strength not ours (Lloyd-Jones magnet quote; banana boat Philippines story); list of threats (trouble, hardship, persecution, famine, nakedness, danger, sword); hupernikomen super conquerors; Nike swoosh illustration; feelings vs truth in suffering; Baby 81 / Abilash tsunami story from Sri Lanka; three closing truths (condemnation silenced, separation impossible, love unbreakable); Tim Keller on fully known and fully loved. Custom **The Sandwich** tab (7-layer series recap + rhetorical questions + threat grid). Reuses `css/romans-8.css`. `sermons_data.json` + `key_scriptures.json` entries.*
 *Added 2026-05-17 (Romans 8: God Is For Us) — sixth sermon in the Romans 8 series with Pastor Eric. Romans 8:31-34, 8:1; Zechariah 3:1-4, 3:8-9; Isaiah 50:8-9; Colossians 2:13-15; Galatians 3:10 (in worship song) — courtroom climax where accusations may be true but no longer relevant; Joshua the high priest in filthy garments with no defence; Satan as accuser; the Branch removing sin in a single day; united with Christ his vindication is ours; empty courtroom / case adjourned / no double jeopardy; cross as mastermind victory over powers; Christ interceding at the Father's right hand now; Shane & Shane "Embracing Accusation" and "he forgot the refrain: Jesus saves"; John Newton and Robert Murray M'Cheyne quotes; five freedoms (less defensive, be for others, fail freely, lay down accusations, intercede). Custom **Courtroom Drama** tab. Reuses `css/romans-8.css`. `sermons_data.json` + key_scriptures.json entries.*

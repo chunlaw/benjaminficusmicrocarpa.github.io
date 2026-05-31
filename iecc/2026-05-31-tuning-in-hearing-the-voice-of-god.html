@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuning In: Hearing the Voice of God | Island ECC</title>
+    <meta name="description" content="Week 1 of Tuning In: Pastor Brett opens a five-week series on hearing God's voice — John 10:27, the shepherd's sheep, acoustic listening, and why tuning in to God is life's most desperate need.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Libre+Franklin:wght@500;600&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iecc-base.css">
+    <link rel="stylesheet" href="css/tuning-in.css">
+    <style>
+        .hero-header { position: relative; min-height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .hero-content { position: relative; z-index: 10; text-align: center; padding: 2rem; max-width: 950px; }
+        .hero-title { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 1rem; text-shadow: 2px 4px 16px rgba(0,0,0,0.7); animation: fadeInUp 1s ease-out; }
+        .hero-subtitle { font-size: clamp(1rem, 2.2vw, 1.3rem); margin-bottom: 1.25rem; animation: fadeInUp 1s ease-out 0.3s both; }
+        .hero-meta { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; animation: fadeInUp 1s ease-out 0.5s both; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease-out 0.7s both; }
+        .btn { padding: 0.875rem 2rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Libre Franklin', sans-serif; }
+        .btn-primary { background: linear-gradient(135deg, var(--tuning-amber) 0%, var(--tuning-copper) 100%); color: #0f1624; box-shadow: 0 4px 15px rgba(232, 168, 64, 0.35); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232, 168, 64, 0.5); }
+        .btn-secondary { background: rgba(240, 235, 227, 0.08); color: var(--text-light); border: 2px solid rgba(240, 235, 227, 0.25); backdrop-filter: blur(10px); }
+        .btn-secondary:hover { background: rgba(240, 235, 227, 0.15); border-color: rgba(240, 235, 227, 0.45); }
+        .tabs-container { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .tabs { display: flex; overflow-x: auto; scrollbar-width: none; max-width: 1200px; margin: 0 auto; }
+        .tabs::-webkit-scrollbar { display: none; }
+        .tab { padding: 1.25rem 1.25rem; cursor: pointer; border: none; background: transparent; color: var(--text-muted); font-weight: 500; transition: all 0.3s ease; white-space: nowrap; border-bottom: 3px solid transparent; font-family: 'Libre Franklin', sans-serif; font-size: 0.9rem; }
+        .main-content { display: block; max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .tab-content { display: none; animation: fadeIn 0.5s ease-in; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .content-card { background: var(--bg-card); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border-left: 4px solid var(--tuning-copper); }
+        .content-card h2 { color: var(--accent-light); font-size: 1.85rem; margin-bottom: 1.5rem; }
+        .content-card h3 { color: var(--accent-light); font-size: 1.35rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+        .verse-card { border-left: 4px solid var(--tuning-amber); padding: 1.5rem; margin: 1.5rem 0; border-radius: 12px; font-family: 'Lora', serif; }
+        .verse-ref { color: var(--accent-light); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem; display: block; font-family: 'Libre Franklin', sans-serif; }
+        .verse-text { font-size: 1.1rem; line-height: 1.9; font-style: italic; }
+        .verse-context { font-size: 0.95rem; color: var(--text-muted); margin-top: 0.75rem; font-style: normal; padding-top: 0.75rem; border-top: 1px solid rgba(154, 168, 196, 0.2); font-family: 'Inter', sans-serif; }
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .app-card { background: var(--bg-card); border-radius: 16px; padding: 2rem; border-top: 4px solid var(--tuning-amber); }
+        .app-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .app-card-title { font-weight: 600; font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Libre Franklin', sans-serif; }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.75rem; }
+            .main-content { padding: 1.5rem 0.75rem; }
+            .content-card { padding: 1.25rem 1rem; }
+        }
+        @media print { .tabs-container, .hero-buttons, .attribution { display: none; } .tab-content { display: block !important; page-break-after: always; } }
+        .tab:focus, .btn:focus { outline: 3px solid var(--accent-light); outline-offset: 2px; }
+        @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    </style>
+</head>
+<body data-sermon-date="2026-05-31">
+    <header class="hero-header hero-radio-booth">
+        <div class="hero-dial-glow" aria-hidden="true"></div>
+        <div class="hero-waveform" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="tuning-frequency-bar" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <p class="station-label">📻 Island ECC · FM633</p>
+            <h1 class="hero-title">Tuning In:<br>Hearing the Voice of God</h1>
+            <p class="hero-subtitle">"My sheep listen to my voice; I know them, and they follow me." — John 10:27 (NIV)</p>
+            <div class="hero-meta">
+                📅 31 May 2026 | 🎤 Pastor Brett | 🏝️ Island ECC | 📻 Tuning In (Week 1 of 5)
+            </div>
+            <div class="sermon-tags-container" id="sermon-tags"></div>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/watch?v=ax23VFNepp8" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    ▶️ Watch Original Sermon
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    📚 View All Sermons
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" role="navigation" aria-label="Sermon sections">
+        <div class="tabs">
+            <div class="tab active" data-tab="overview" role="tab" aria-selected="true">📋 Overview</div>
+            <div class="tab" data-tab="sermon" role="tab" aria-selected="false">📖 Main Sermon</div>
+            <div class="tab" data-tab="verses" role="tab" aria-selected="false">✝️ Bible Verses</div>
+            <div class="tab" data-tab="frequencies" role="tab" aria-selected="false">📻 Four Frequencies</div>
+            <div class="tab" data-tab="application" role="tab" aria-selected="false">🎯 Application</div>
+            <div class="tab" data-tab="reflection" role="tab" aria-selected="false">💭 Reflection</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="overview" class="tab-content active">
+            <div class="content-card">
+                <h2>📋 Sermon Overview</h2>
+                <p><strong>Central Theme:</strong> Island ECC launches <em>Tuning In</em> — a five-week series on a God who speaks and a people willing to hear. Hearing God's loving direction saves us from pain, comforts us in struggle, and gives meaning to life. This first message sets the dial: God is not silent; we tune our ears to recognize his voice amid the noise.</p>
+
+                <div class="highlight-box">
+                    <strong>New series:</strong> Pastor Brett opened with the FM633 radio booth — "Prepare your ears… Thank you for tuning in." The series will explore how God speaks (especially through Scripture), how we discern his voice, and how we respond with joyful obedience — not reserved for the super-spiritual, but for every believer.
+                </div>
+
+                <h3>📻 Series Roadmap</h3>
+                <div class="series-roadmap">
+                    <div class="roadmap-week active"><strong>WEEK 1</strong>Hearing the Voice of God</div>
+                    <div class="roadmap-week"><strong>WEEK 2</strong>Coming soon</div>
+                    <div class="roadmap-week"><strong>WEEK 3</strong>Coming soon</div>
+                    <div class="roadmap-week"><strong>WEEK 4</strong>Coming soon</div>
+                    <div class="roadmap-week"><strong>WEEK 5</strong>Coming soon</div>
+                </div>
+
+                <h3>📖 Key Passages</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 10:27 (NIV)</span>
+                    <div class="verse-text">"My sheep listen to my voice; I know them, and they follow me."</div>
+                </div>
+
+                <h3>🌟 Main Takeaways</h3>
+                <ol>
+                    <li><strong>Hearing God is for every believer</strong> — not Mother Teresa, Billy Graham, or "professional Christians" only; <em>my sheep</em> hear his voice.</li>
+                    <li><strong>Relationship comes first</strong> — belonging to Christ (the fold) is the starting point before expecting to hear clearly.</li>
+                    <li><strong>God speaks organically</strong> — he is not a distant clockmaker; he continues to speak with macro and micro care for your life.</li>
+                    <li><strong>Competing voices are real</strong> — strangers, culture, and often your own agenda are the loudest static.</li>
+                    <li><strong>Open ears are a gift and a choice</strong> — David prayed God would open his ears (<span class="term-tip" tabindex="0" data-tooltip="Hebrew kara (כָּרָה): to open, excavate, or pierce — the same word used for piercing a servant's ear in Exodus 21.">kara</span>); the pierced ear in Exodus 21 pictures voluntary lifelong devotion.</li>
+                    <li><strong>Three stakes</strong> — hearing proves you are God's child, protects you from self-made failure, and provides wisdom for true success.</li>
+                    <li><strong>Prayer is two-way</strong> — never say "amen" in the sense of ending the conversation; keep the loop open with the Shepherd.</li>
+                </ol>
+
+                <h3>📐 Sermon Structure</h3>
+                <div class="flow-container">
+                    <div class="flow-step"><div class="flow-step-icon">📻</div><div class="flow-step-title">FM633 / Tune in</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">🌏</div><div class="flow-step-title">Acoustic profile</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">👂</div><div class="flow-step-title">Desperate need</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">🐑</div><div class="flow-step-title">John 10</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">✝️</div><div class="flow-step-title">Communion</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sermon" class="tab-content">
+            <div class="content-card">
+                <h2>📻 You're Exactly Where You Need to Be</h2>
+                <div class="broadcast-quote">
+                    <span class="on-air-pill">On air · FM633</span>
+                    <p class="quote-text">Glad you found us here at FM633. You're exactly where you need to be. Prepare your ears for something great. Thank you for tuning in.</p>
+                </div>
+                <p>Pastor Brett framed the new series: a God who speaks, and our willingness and ability to hear and respond. Over five weeks the church will explore how God speaks (his Word as primary, plus other biblical means), how we discern his voice, and how we tune out competing noise.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🌏 Acoustic Profile — China, 1991</h2>
+                <p>Brett and Shannon taught English in western China — "professors" with accounting and nursing degrees, accredited mainly as native speakers. Students gravitated to their classes over George and Helen, a credentialed British couple. George grew bitter; the real reason wasn't popularity but <strong>acoustic profile</strong>.</p>
+                <p>Languages are best understood within certain frequency ranges. British English sits higher (~12,000 Hz); George was not only British but Scottish — hard for learners to parse. American English was easier for students to "lock onto."</p>
+                <p>The sermon pivot: <strong>What frequency does God speak on? How do we tune our ears, adjust the noise, and focus to hear what he is saying?</strong> Jesus says repeatedly, <em>"Whoever has ears, let them hear"</em> — you can have physical ears and still not listen.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>👂 Life's Most Desperate Need</h2>
+                <p>Pastor Brett has never heard God's voice audibly. He hears through ideas, nudges, impressions, Scripture, and sometimes through others. Yet hearing from God is not reserved for the super-spiritual — it is the expectation for <strong>every believer</strong>.</p>
+                <p>Without hearing God, we construct life on our own — disastrous now and eternally. God reveals salvation and guides how we submit to his loving hand.</p>
+
+                <ul class="signal-meter-list">
+                    <li>
+                        <div class="signal-meter" aria-hidden="true"></div>
+                        <div>
+                            <strong>1. Proves you are a child of God</strong> — "My sheep hear my voice" (John 10). Followers of Christ, not a special subcategory.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="signal-meter" aria-hidden="true"></div>
+                        <div>
+                            <strong>2. Protects you from failure</strong> — God's ways are good; left alone we make crooked paths (Proverbs 3:6).
+                        </div>
+                    </li>
+                    <li>
+                        <div class="signal-meter" aria-hidden="true"></div>
+                        <div>
+                            <strong>3. Provides success in life</strong> — "I will counsel you with my loving eye on you" — wisdom and instruction when we come with open hands, not pre-packaged agendas asking only for blessing.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2>📖 Open Ears — Psalm 40 &amp; the Pierced Ear</h2>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Psalm 40:6-8 (NIV, excerpt)</span>
+                    <div class="verse-text">"Sacrifice and offering you did not desire — but my ears you have opened… Here I am… I desire to do your will, my God; your law is within my heart."</div>
+                </div>
+                <p>David learned God wanted relationship more than ritual performance. The Hebrew word <span class="term-tip" tabindex="0" data-tooltip="Kara (כָּרָה): to open, dig, or pierce — used of opened ears in Psalm 40 and of piercing a servant's ear at the doorpost in Exodus 21.">kara</span> means to open — even to excavate or pierce. In Exodus 21, a servant who loves his master and refuses freedom has his ear pierced at the doorpost — a lifelong sign of chosen devotion. David's prayer becomes ours: <em>Lord, open our ears to hear you.</em></p>
+            </div>
+
+            <div class="content-card">
+                <h2>🐑 John 10 — Shepherd, Sheep &amp; the Sheepfold</h2>
+                <p>Jesus uses the sheepfold — rock pens waist-high, shared by multiple shepherds. At night sheep mingle; in the morning each shepherd calls and his sheep follow the voice they know. Strangers they flee.</p>
+
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h4>Gatekeeper &amp; "I am the door"</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>One shepherd lies across the only entrance — body as gate. When Jesus says he is the door and the good shepherd, the metaphor was vivid in that culture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>My sheep — relationship first</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Attending church doesn't make you a Christian any more than sitting in a garage makes you a car. Faith in Christ closes the gap sin created; the Spirit dwells in every believer — the starting point for hearing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Family "inside language"</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Every family has private jokes and cues — the Lau family's WhatsApp titled "Honey, I Bought the Kids," Shannon's "mommy eyes," Brett's "daddy clenched jaw." God's family has similar intimacy: over time we learn how he speaks, what he values, and where he grants freedom.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4>Ways God may speak (preview)</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Audibly (rare), impressions, ideas, Scripture, dreams, community, circumstances — upcoming weeks will evaluate what is biblical and how to discern between options (e.g. job A vs. job B).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Hebrews 13:20-21 (NIV, excerpt)</span>
+                    <div class="verse-text">"… our Lord Jesus, the great shepherd of the sheep …"</div>
+                    <div class="verse-context">Not merely good — <em>great</em>. He protects, provides, guides, and speaks. Train your ear to the great Shepherd.</div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>🍞 Communion</h2>
+                <p>The service closed with the Lord's Supper — bread and cup for all who name Jesus as Lord and Savior. Brett recalled Jesus on the night he was betrayed: body given, blood of the new covenant — remember me. For those not yet trusting Christ, the invitation was to pray and ask God to reveal himself rather than take the elements in confusion.</p>
+            </div>
+        </section>
+
+        <section id="verses" class="tab-content">
+            <div class="content-card">
+                <h2>✝️ Scripture in This Sermon</h2>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 10:27 (NIV)</span>
+                    <div class="verse-text">"My sheep listen to my voice; I know them, and they follow me."</div>
+                    <div class="verse-context">The memorizable center of the message — four truths unpacked in the Frequencies tab.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 10:1-5 (NIV, excerpt)</span>
+                    <div class="verse-text">"… the sheep hear his voice, and he calls his own sheep by name and leads them out … the sheep follow him, for they know his voice. A stranger they will not follow … they do not know the voice of strangers."</div>
+                    <div class="verse-context">Sheep discern the shepherd's voice through familiarity — the series' tuning metaphor.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Psalm 40:6-8 (NIV)</span>
+                    <div class="verse-text">"Sacrifice and offering you did not desire — but my ears you have opened … I desire to do your will, my God; your law is within my heart."</div>
+                    <div class="verse-context">God desires relationship and listening hearts over empty ritual.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Exodus 21:5-6 (NIV)</span>
+                    <div class="verse-text">"But if the servant declares, 'I love my master and my wife and children and do not want to go free,' then his master must take him before the judges. He shall take him to the door or the doorpost and pierce his ear with an awl. Then he will be his servant for life."</div>
+                    <div class="verse-context">Background for David's "opened ears" — voluntary, lifelong devotion.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Proverbs 3:5-6 (NIV)</span>
+                    <div class="verse-text">"Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."</div>
+                    <div class="verse-context">God protects us from self-made crooked paths when we listen and submit.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Ephesians 2:19 (NIV)</span>
+                    <div class="verse-text">"Consequently, you are no longer foreigners and strangers, but fellow citizens with God's people and also members of his household."</div>
+                    <div class="verse-context">"My sheep" — brought near into God's family.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Hebrews 13:20-21 (NIV)</span>
+                    <div class="verse-text">"Now may the God of peace, who through the blood of the eternal covenant brought back from the dead our Lord Jesus, that great Shepherd of the sheep, equip you with everything good for doing his will, and may he work in us what is pleasing to him, through Jesus Christ, to whom be glory for ever and ever. Amen."</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frequencies" class="tab-content">
+            <div class="content-card">
+                <h2>📻 Four Frequencies — John 10:27</h2>
+                <p>Jesus packs four relational truths into one short verse. Each is a "channel" to tune into as you learn to hear the great Shepherd.</p>
+            </div>
+
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <div class="channel-num">CH 01</div>
+                    <h3>My sheep</h3>
+                    <p><strong>Belonging first.</strong> A possessive love — you are his. The starting point is relationship: sinners who trust Christ, Spirit-indwelt, brought into God's household. Without the fold, there is no promise of hearing.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span></span><span></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 02</div>
+                    <h3>Hear my voice</h3>
+                    <p><strong>Divine access.</strong> Every believer can grow in hearing — impressions, Scripture, community, circumstances. Not only for the spectacular or charismatic. God wants his children to recognize his voice over strangers and static.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 03</div>
+                    <h3>I know them</h3>
+                    <p><strong>Known completely, loved still.</strong> He knows your needs, wounds, selfish bends, and gifts. That knowledge releases white-knuckled control: "God, speak — I am all ears."</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 04</div>
+                    <h3>They follow me</h3>
+                    <p><strong>Joyful obedience.</strong> Sheep don't renegotiate departure time. Maturity says: your ways are good — instruct me. Trust grows as you see disaster when you follow only yourself.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span></div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 10:27 (NIV)</span>
+                    <div class="verse-text">"My sheep listen to my voice; I know them, and they follow me."</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="application" class="tab-content">
+            <div class="content-card">
+                <h2>🎯 Tuning Out Static, Tuning In to God</h2>
+                <p>Hearing God is your most desperate need — not because you are second-class if you don't hear audibly, but because what is available to every Christian is worth pursuing with open ears and open hands.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>🔊 Competing Voices</h3>
+                <div class="voice-contrast-grid">
+                    <div class="voice-contrast-card static">
+                        <h4>📡 Your voice</h4>
+                        <p>Often the loudest: "God, bless my plans." Control first, then ask for approval. Maturity asks: <em>What's your agenda?</em></p>
+                    </div>
+                    <div class="voice-contrast-card interference">
+                        <h4>📡 Strangers &amp; noise</h4>
+                        <p>Culture, fear, guilt, and voices that don't belong to the Shepherd. Sheep flee what they don't know.</p>
+                    </div>
+                    <div class="voice-contrast-card clear">
+                        <h4>📻 The Shepherd</h4>
+                        <p>Scripture (primary), Spirit-shaped impressions, godly community, circumstances — trained over time like sheep know their shepherd's call.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-card-icon">👂</div>
+                    <div class="app-card-title">Fine-tune daily</div>
+                    <p>Keep prayer two-way — don't "hang up" after presenting requests. Stay in the conversation throughout the day.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-card-icon">📖</div>
+                    <div class="app-card-title">Anchor in Scripture</div>
+                    <p>God's Word is the primary frequency. Impressions and circumstances are tested against what God has already spoken.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-card-icon">🙌</div>
+                    <div class="app-card-title">Pre-decide obedience</div>
+                    <p>Come trusting his character: "Here I am, Lord, speak" — rather than "Here's my agenda — please sign off."</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="highlight-box">
+                    <strong>Still and know:</strong> The service closed with worship on Psalm 46:10 — <em>Be still, and know that I am God.</em> Let your appetite be whetted for more of him this series: tune in, walk in freedom, not guilt — as children who seek the Shepherd's guidance.
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="tab-content">
+            <div class="content-card">
+                <h2>💭 Reflection &amp; Discussion</h2>
+
+                <h3>📝 From the service</h3>
+                <ul class="reflection-list">
+                    <li>How would you respond if asked, "Does God speak to you?" What is a recent example of how God spoke to you? How did you respond?</li>
+                    <li>What are some ways in which you can improve your listening skills to the God who longs to connect with you?</li>
+                </ul>
+
+                <h3>🔍 Going deeper</h3>
+                <ul class="reflection-list">
+                    <li>Where do you most often ask God to bless decisions you've already made, rather than asking what he wants first?</li>
+                    <li>Which of the four frequencies (my sheep / hear / know / follow) is weakest in your walk right now? What would strengthening it look like this week?</li>
+                    <li>What "static" — your own voice, culture, busyness — do you need to turn down to hear the Shepherd more clearly?</li>
+                    <li>How does the pierced-ear picture in Exodus 21 reshape the way you think about listening to God?</li>
+                    <li>Pastor Brett said he hears through impressions, Scripture, and others — never audibly. Does that encourage or unsettle you? Why?</li>
+                </ul>
+
+                <h3>🙏 Prayer prompts</h3>
+                <ul class="reflection-list">
+                    <li><strong>Open ears:</strong> Lord, excavate and open my ears — I choose lifelong devotion to you as my Master.</li>
+                    <li><strong>Less static:</strong> Quiet the noise of my agenda; help me hear your voice above my own.</li>
+                    <li><strong>Follow:</strong> Great Shepherd, I trust that you know me; give me courage to follow even when the path is unclear.</li>
+                </ul>
+
+                <h3>⚡ Challenge for the week</h3>
+                <ul class="reflection-list">
+                    <li>Each morning, pray once in each direction: <em>Speak</em> (listen), <em>Know</em> (rest in being known), <em>Follow</em> (one step of obedience you'll take that day). Keep the loop open — don't "amen" your conversation with God for the day.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="attribution" id="attribution" role="contentinfo">
+        <div class="attribution-short" aria-label="Attribution">ℹ️</div>
+        <div class="attribution-full">
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                Generated by LLM with supervision and polishing by
+                <a href="../index.html" target="_blank" rel="noopener noreferrer">benjaminficusmicrocarpa</a>.
+                <a href="../license.html" target="_blank" rel="noopener noreferrer">MIT License</a>
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/iecc-common.js"></script>
+</body>
+</html>
