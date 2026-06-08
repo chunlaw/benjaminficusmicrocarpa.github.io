@@ -339,6 +339,18 @@ h2, h3, h4,
     margin-bottom: 0.25rem;
 }
 
+a.roadmap-week {
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+a.roadmap-week:hover {
+    border-color: rgba(232, 168, 64, 0.5);
+    background: rgba(232, 168, 64, 0.08);
+    color: var(--tuning-cream);
+}
+
 /* Signal meter list */
 .signal-meter-list {
     list-style: none;

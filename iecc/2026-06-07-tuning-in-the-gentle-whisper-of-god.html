@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuning In: The Gentle Whisper Of God | Island ECC</title>
+    <meta name="description" content="Week 2 of Tuning In: Pastor Brett on Elijah, the gentle whisper of God, noise-canceling faith, and five biblical ways God speaks to his people.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Libre+Franklin:wght@500;600&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iecc-base.css">
+    <link rel="stylesheet" href="css/tuning-in.css">
+    <style>
+        .hero-header { position: relative; min-height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .hero-content { position: relative; z-index: 10; text-align: center; padding: 2rem; max-width: 950px; }
+        .hero-title { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 1rem; text-shadow: 2px 4px 16px rgba(0,0,0,0.7); animation: fadeInUp 1s ease-out; }
+        .hero-subtitle { font-size: clamp(1rem, 2.2vw, 1.3rem); margin-bottom: 1.25rem; animation: fadeInUp 1s ease-out 0.3s both; }
+        .hero-meta { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; animation: fadeInUp 1s ease-out 0.5s both; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease-out 0.7s both; }
+        .btn { padding: 0.875rem 2rem; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Libre Franklin', sans-serif; }
+        .btn-primary { background: linear-gradient(135deg, var(--tuning-amber) 0%, var(--tuning-copper) 100%); color: #0f1624; box-shadow: 0 4px 15px rgba(232, 168, 64, 0.35); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232, 168, 64, 0.5); }
+        .btn-secondary { background: rgba(240, 235, 227, 0.08); color: var(--text-light); border: 2px solid rgba(240, 235, 227, 0.25); backdrop-filter: blur(10px); }
+        .btn-secondary:hover { background: rgba(240, 235, 227, 0.15); border-color: rgba(240, 235, 227, 0.45); }
+        .tabs-container { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .tabs { display: flex; overflow-x: auto; scrollbar-width: none; max-width: 1200px; margin: 0 auto; }
+        .tabs::-webkit-scrollbar { display: none; }
+        .tab { padding: 1.25rem 1.25rem; cursor: pointer; border: none; background: transparent; color: var(--text-muted); font-weight: 500; transition: all 0.3s ease; white-space: nowrap; border-bottom: 3px solid transparent; font-family: 'Libre Franklin', sans-serif; font-size: 0.9rem; }
+        .main-content { display: block; max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .tab-content { display: none; animation: fadeIn 0.5s ease-in; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .content-card { background: var(--bg-card); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border-left: 4px solid var(--tuning-copper); }
+        .content-card h2 { color: var(--accent-light); font-size: 1.85rem; margin-bottom: 1.5rem; }
+        .content-card h3 { color: var(--accent-light); font-size: 1.35rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+        .verse-card { border-left: 4px solid var(--tuning-amber); padding: 1.5rem; margin: 1.5rem 0; border-radius: 12px; font-family: 'Lora', serif; }
+        .verse-ref { color: var(--accent-light); font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem; display: block; font-family: 'Libre Franklin', sans-serif; }
+        .verse-text { font-size: 1.1rem; line-height: 1.9; font-style: italic; }
+        .verse-context { font-size: 0.95rem; color: var(--text-muted); margin-top: 0.75rem; font-style: normal; padding-top: 0.75rem; border-top: 1px solid rgba(154, 168, 196, 0.2); font-family: 'Inter', sans-serif; }
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .app-card { background: var(--bg-card); border-radius: 16px; padding: 2rem; border-top: 4px solid var(--tuning-amber); }
+        .app-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .app-card-title { font-weight: 600; font-size: 1.15rem; margin-bottom: 0.75rem; font-family: 'Libre Franklin', sans-serif; }
+        .hero-radio-photo { background: linear-gradient(180deg, rgba(15,22,36,0.82) 0%, rgba(15,22,36,0.92) 55%, var(--bg-dark) 100%), url('img/tuning-in/2026-06-07/hero-radio.jpg') center 40% / cover no-repeat; }
+        .sermon-figure { margin: 1.75rem 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(232, 168, 64, 0.2); }
+        .sermon-figure img { width: 100%; height: auto; display: block; }
+        .sermon-figure figcaption { padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--text-muted); background: rgba(0,0,0,0.25); font-family: 'Inter', sans-serif; }
+        .slide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+        .slide-thumb { border-radius: 10px; overflow: hidden; border: 1px solid rgba(154, 168, 196, 0.15); }
+        .slide-thumb img { width: 100%; display: block; }
+        .slide-thumb p { padding: 0.65rem 0.85rem; font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+        .author-quote { border-left: 4px solid var(--tuning-copper); padding: 1.25rem 1.5rem; margin: 1.5rem 0; background: rgba(232, 168, 64, 0.06); border-radius: 0 12px 12px 0; font-family: 'Lora', serif; }
+        .author-quote .quote-text { font-size: 1.1rem; font-style: italic; line-height: 1.8; color: var(--tuning-cream); }
+        .author-quote .quote-author { margin-top: 0.75rem; font-size: 0.95rem; color: var(--tuning-amber); font-family: 'Libre Franklin', sans-serif; font-style: normal; }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.75rem; }
+            .main-content { padding: 1.5rem 0.75rem; }
+            .content-card { padding: 1.25rem 1rem; }
+        }
+        @media print { .tabs-container, .hero-buttons, .attribution { display: none; } .tab-content { display: block !important; page-break-after: always; } }
+        .tab:focus, .btn:focus { outline: 3px solid var(--accent-light); outline-offset: 2px; }
+        @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    </style>
+</head>
+<body data-sermon-date="2026-06-07">
+    <header class="hero-header hero-radio-booth hero-radio-photo">
+        <div class="hero-dial-glow" aria-hidden="true"></div>
+        <div class="hero-waveform" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="tuning-frequency-bar" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <p class="station-label">📻 Island ECC · FM633</p>
+            <h1 class="hero-title">Tuning In:<br>The Gentle Whisper Of God</h1>
+            <p class="hero-subtitle">"After the fire came a gentle whisper." — 1 Kings 19:12 (NIV)</p>
+            <div class="hero-meta">
+                📅 07 Jun 2026 | 🎤 Pastor Brett | 🏝️ Island ECC | 📻 Tuning In (Week 2 of 5)
+            </div>
+            <div class="sermon-tags-container" id="sermon-tags"></div>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/watch?v=VvPiJpCDj7M" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    ▶️ Watch Original Sermon
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    📚 View All Sermons
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" role="navigation" aria-label="Sermon sections">
+        <div class="tabs">
+            <div class="tab active" data-tab="overview" role="tab" aria-selected="true">📋 Overview</div>
+            <div class="tab" data-tab="sermon" role="tab" aria-selected="false">📖 Main Sermon</div>
+            <div class="tab" data-tab="verses" role="tab" aria-selected="false">✝️ Bible Verses</div>
+            <div class="tab" data-tab="five-ways" role="tab" aria-selected="false">🔊 Five Ways God Speaks</div>
+            <div class="tab" data-tab="application" role="tab" aria-selected="false">🎯 Application</div>
+            <div class="tab" data-tab="reflection" role="tab" aria-selected="false">💭 Reflection</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="overview" class="tab-content active">
+            <div class="content-card">
+                <h2>📋 Sermon Overview</h2>
+                <p><strong>Central Theme:</strong> Week 2 of <em>Tuning In</em> turns the dial from <em>whether</em> God speaks to <em>how</em> he often speaks — not in wind, earthquake, or fire, but in a <strong>gentle whisper</strong> amid ordinary life. Pastor Brett invites believers to lean in, cancel the noise, and expect God to speak correction, comfort, clarity, conviction, and calling into character.</p>
+
+                <div class="highlight-box">
+                    <strong>Series thread:</strong> Last week set the relationship — sheep who belong to the Shepherd hear his voice. This week asks: amid competing noise (inner turmoil, culture, notifications, fear), can we tune in to the whisper that guides ordinary steps — <em>"This is the way; walk in it"</em>?
+                </div>
+
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/brett-preaching.jpg" alt="Pastor Brett preaching at Island ECC" loading="lazy" width="1280" height="720">
+                    <figcaption>Pastor Brett — Week 2 of Tuning In at Island ECC</figcaption>
+                </figure>
+
+                <h3>📻 Series Roadmap</h3>
+                <div class="series-roadmap">
+                    <a href="2026-05-31-tuning-in-hearing-the-voice-of-god.html" class="roadmap-week"><strong>WEEK 1</strong>Hearing the Voice of God</a>
+                    <div class="roadmap-week active"><strong>WEEK 2</strong>The Gentle Whisper Of God</div>
+                    <div class="roadmap-week"><strong>WEEK 3</strong>Coming soon</div>
+                    <div class="roadmap-week"><strong>WEEK 4</strong>Coming soon</div>
+                    <div class="roadmap-week"><strong>WEEK 5</strong>Coming soon</div>
+                </div>
+
+                <h3>📖 Key Passages</h3>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Kings 19:12 (NIV)</span>
+                    <div class="verse-text">"After the fire came a gentle whisper."</div>
+                </div>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Isaiah 30:21 (NIV)</span>
+                    <div class="verse-text">"Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, 'This is the way, walk in it.'"</div>
+                </div>
+
+                <h3>🌟 Main Takeaways</h3>
+                <ol>
+                    <li><strong>God speaks in the ordinary</strong> — not only at retreats and mountaintops; the mundane is where the whisper often comes.</li>
+                    <li><strong>Noise is the enemy of listening</strong> — inner anxiety, culture, and even a fly's buzz (John Donne) can drown out God; silence is spiritual warfare (Henri Nouwen).</li>
+                    <li><strong>Elijah's arc</strong> — from fire on Mount Carmel to despair in a cave; God was not in the spectacular display but in the still, small voice.</li>
+                    <li><strong>Five reliable channels</strong> — correction over lies, comfort over fear, clarity over confusion, conviction over sin, calling into character.</li>
+                    <li><strong>Posture of listening</strong> — Samuel's prayer: <em>Speak, Lord, for your servant is listening</em> — expectation, surrender, and sustained attention.</li>
+                </ol>
+
+                <h3>📐 Sermon Structure</h3>
+                <div class="flow-container">
+                    <div class="flow-step"><div class="flow-step-icon">🎧</div><div class="flow-step-title">Noise canceling</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">📖</div><div class="flow-step-title">Isaiah 30:21</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">🔥</div><div class="flow-step-title">Elijah 1 Kings 19</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">🔊</div><div class="flow-step-title">Five ways</div></div>
+                    <span class="flow-arrow">→</span>
+                    <div class="flow-step"><div class="flow-step-icon">👂</div><div class="flow-step-title">Speak, Lord</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sermon" class="tab-content">
+            <div class="content-card">
+                <h2>📻 Still Tuned In at FM633</h2>
+                <div class="broadcast-quote">
+                    <span class="on-air-pill">On air · FM633</span>
+                    <p class="quote-text">Glad you found us here at FM633. You're exactly where you need to be. Thank you for tuning in.</p>
+                </div>
+                <p>Pastor Brett continued the <em>Tuning In</em> series: we speak to God in prayer — but how is that a conversation, not a monologue? A healthy relationship has give and take. If faith is relationship with God, we should expect ongoing two-way communication beyond Scripture alone — carefully, biblically, and with discernment.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🎧 Noise-Canceling Faith</h2>
+                <p>Brett held up noise-canceling earphones — passive seal plus active microphones that invert surrounding sound waves to create silence so you hear what you choose. His question: <strong>What if we could hear God that clearly?</strong> Cancel inner turmoil, anxiety, competing demands, markets, politics, notifications — not by technology, but because God desires to speak and we learn to discern.</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Isaiah 30:21 (NIV)</span>
+                    <div class="verse-text">"Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, 'This is the way, walk in it.'"</div>
+                    <div class="verse-context">Moment-by-moment guidance in ordinary life — the dignity of God engaging us in ongoing conversation.</div>
+                </div>
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/slide-isaiah-30-21.jpg" alt="Sermon slide: Isaiah 30:21 projected on screen" loading="lazy">
+                    <figcaption>Isaiah 30:21 on screen — 46:13 in the service</figcaption>
+                </figure>
+            </div>
+
+            <div class="content-card">
+                <h2>🔥 Elijah — From Fire to Whisper</h2>
+                <p>In <strong>1 Kings 18</strong>, Elijah prays once and fire falls — bold faith, pagan prophets defeated. He expects revival in Jezreel. Instead Jezebel orders his death. Elijah runs, hides, and prays in self-pity: <em>"I alone am left."</em></p>
+                <p>In <strong>1 Kings 19</strong>, God tells him to stand on the mountain. A great wind shatters rocks — <strong>the Lord was not in the wind.</strong> An earthquake — <strong>not in the earthquake.</strong> Fire — <strong>not in the fire.</strong> (God has used wind, fire, and earthquake before; not this time.)</p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Kings 19:12 (NIV)</span>
+                    <div class="verse-text">"After the fire came a gentle whisper."</div>
+                    <div class="verse-context">Some translations: "a still small voice." Whispers require leaning in — ear turned, intimacy, closeness. God is in the ordinary, not only the extraordinary.</div>
+                </div>
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/slide-1kings-19-12.jpg" alt="Sermon slide: 1 Kings 19:12 gentle whisper" loading="lazy">
+                    <figcaption>1 Kings 19:12 — the title passage of this message</figcaption>
+                </figure>
+                <p>Elijah teaches that we need not wait for earthquake or fire. Most of life is routine, forgettable days — and <em>that</em> is where God desires to converse with us.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🪰 The Noise of a Fly — &amp; the War on Silence</h2>
+                <div class="author-quote">
+                    <div class="quote-text">"I neglect God and his angels with the noise of a fly."</div>
+                    <div class="quote-author">— John Donne (16th century)</div>
+                </div>
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/slide-donne.jpg" alt="Sermon slide: John Donne quote on the noise of a fly" loading="lazy">
+                </figure>
+                <p>Donne had no smartphone — how much more distracted are we? Multitasking is applauded; frenetic noise is normal. Are we waiting for something loud while missing the whisper?</p>
+                <div class="author-quote">
+                    <div class="quote-text">"Silence is an active war against the competing voices in us and around us."</div>
+                    <div class="quote-author">— Henri Nouwen</div>
+                </div>
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/slide-nouwen.jpg" alt="Sermon slide: Henri Nouwen quote on silence" loading="lazy">
+                </figure>
+                <p>Brett admitted he is not a monk — he loves activity and Causeway Bay crowds. Silence is uncomfortable; it is a <strong>discipline</strong> to sit beyond a minute. Yet silence is where whispers are heard.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>🔊 Preview: Five Ways God Speaks</h2>
+                <p>Brett outlined five biblically grounded categories (see the dedicated tab for detail):</p>
+                <ol>
+                    <li><strong>Correction</strong> over the lies of the enemy</li>
+                    <li><strong>Comfort</strong> to your fears</li>
+                    <li><strong>Clarity</strong> to your confusion</li>
+                    <li><strong>Conviction</strong> to your sin</li>
+                    <li><strong>Calling</strong> into your character</li>
+                </ol>
+                <p>Stories woven through the message: Monday morning on the beach with his dog Monet and church-budget anxiety; washing dishes at home and God whispering about serving like Jesus when resentment rose toward his adult sons.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>👂 Speak, Lord — Your Servant Is Listening</h2>
+                <p>Young Samuel heard a voice he thought was Eli's — three times. Eli finally said: that is God. Tell him: <em>Speak, Lord, for your servant is listening.</em></p>
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Samuel 3:9 (NIV)</span>
+                    <div class="verse-text">"Speak, Lord, for your servant is listening."</div>
+                    <div class="verse-context">Six words of wisdom — expectation (God will speak), surrender (I am your servant), and listening (not merely hearing).</div>
+                </div>
+                <figure class="sermon-figure">
+                    <img src="img/tuning-in/2026-06-07/slide-samuel-3-9.jpg" alt="Sermon slide: 1 Samuel 3:9 Speak Lord your servant is listening" loading="lazy">
+                    <figcaption>Closing invitation — Speak, Lord</figcaption>
+                </figure>
+                <p>The service closed with worship on <em>Touch of Heaven</em> — "All the noise dies down, Lord, speak to me now" — and prayer that our ears would be finely tuned to hear God's voice.</p>
+            </div>
+        </section>
+
+        <section id="verses" class="tab-content">
+            <div class="content-card">
+                <h2>✝️ Scripture in This Sermon</h2>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Isaiah 30:21 (NIV)</span>
+                    <div class="verse-text">"Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, 'This is the way, walk in it.'"</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Kings 19:11-12 (NIV, excerpt)</span>
+                    <div class="verse-text">"The LORD said, 'Go out and stand on the mountain in the presence of the LORD, for the LORD is about to pass by.' … After the earthquake came a fire, but the LORD was not in the fire. And after the fire came a gentle whisper."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Kings 18 (NIV, narrative)</span>
+                    <div class="verse-text">Elijah's contest on Mount Carmel — fire from heaven, prophets of Baal defeated.</div>
+                    <div class="verse-context">Contrast with chapter 19: spectacular display followed by despair and whisper.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 8:32 (NIV)</span>
+                    <div class="verse-text">"Then you will know the truth, and the truth will set you free."</div>
+                    <div class="verse-context">Macro (gospel grace) and micro (daily lies vs. truth) — God speaks truth against the enemy's lies.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 2 Corinthians 10:4-5 (NIV)</span>
+                    <div class="verse-text">"… we demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ."</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 John 16:8 (NIV)</span>
+                    <div class="verse-text">"When he comes, he will prove the world to be in the wrong about sin and righteousness and judgment."</div>
+                    <div class="verse-context">The Spirit convicts — a gift, not punishment.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 2 Corinthians 7:10 (NIV, paraphrased from sermon)</span>
+                    <div class="verse-text">Godly sorrow leads to repentance that leaves no regret.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Acts 10 (NIV, narrative)</span>
+                    <div class="verse-text">Peter's vision of the sheet — God gives clarity to inward perplexity about Jew and Gentile, clean and unclean.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 Ephesians 4:2 (NIV)</span>
+                    <div class="verse-text">"Be completely humble and gentle; be patient, bearing with one another in love."</div>
+                    <div class="verse-context">God chips away at character — love, joy, peace, patience… sanctification never ends.</div>
+                </div>
+
+                <div class="verse-card">
+                    <span class="verse-ref">📖 1 Samuel 3:9 (NIV)</span>
+                    <div class="verse-text">"Speak, Lord, for your servant is listening."</div>
+                </div>
+
+                <h3>📸 Slides from the service</h3>
+                <div class="slide-grid">
+                    <div class="slide-thumb"><img src="img/tuning-in/2026-06-07/slide-isaiah-30-21.jpg" alt="Isaiah 30:21 slide" loading="lazy"><p>Isaiah 30:21</p></div>
+                    <div class="slide-thumb"><img src="img/tuning-in/2026-06-07/slide-1kings-19-12.jpg" alt="1 Kings 19:12 slide" loading="lazy"><p>1 Kings 19:12</p></div>
+                    <div class="slide-thumb"><img src="img/tuning-in/2026-06-07/slide-john-8-32.jpg" alt="John 8:32 slide" loading="lazy"><p>John 8:32</p></div>
+                    <div class="slide-thumb"><img src="img/tuning-in/2026-06-07/slide-samuel-3-9.jpg" alt="1 Samuel 3:9 slide" loading="lazy"><p>1 Samuel 3:9</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="five-ways" class="tab-content">
+            <div class="content-card">
+                <h2>🔊 Five Ways God Speaks</h2>
+                <p>Five biblically backed categories — areas every believer can lean into and expect to hear the gentle whisper of God.</p>
+            </div>
+
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <div class="channel-num">CH 01</div>
+                    <h3>Correction over lies</h3>
+                    <p>Satan is the father of lies — subtle, not always loud. God speaks <strong>truth</strong> against aberrations in our minds. Paul: <em>demolish</em> arguments, take <em>every</em> thought captive (2 Cor 10). Jesus: the truth will set you free (John 8:32) — macro gospel and micro daily discernment.</p>
+                    <figure class="sermon-figure" style="margin-top:1rem;">
+                        <img src="img/tuning-in/2026-06-07/slide-john-8-32.jpg" alt="John 8:32 slide" loading="lazy">
+                    </figure>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span></span><span></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 02</div>
+                    <h3>Comfort to fears</h3>
+                    <p><em>"Fear not"</em> is Scripture's most repeated command. Fear captures us and robs joy. Brett's Monday budget meetings became fear of opinions — until he remembered God has been faithful 27 years at Island ECC and 2,000+ years to the church. God speaks: <em>Do not let your hearts be troubled.</em></p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 03</div>
+                    <h3>Clarity to confusion</h3>
+                    <p>Peter was <em>inwardly perplexed</em> by his vision (Acts 10). God is kind to clarify — sometimes one step at a time (flashlight in a cave), sometimes full explanation. He is not a God of chaos; walk by faith one obedient step at a time.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span></span></div>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-num">CH 04</div>
+                    <h3>Conviction to sin</h3>
+                    <p>The Spirit convicts (John 16:8) — a <strong>gift</strong>, like a loving parent correcting a child. Godly grief leads to repentance (2 Cor 7). Washing dishes, Brett heard: <em>I did not come to be served but to serve</em> — indignation turned to gratitude in five minutes.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span></div>
+                </div>
+                <div class="channel-card" style="grid-column: 1 / -1; max-width: 640px; margin: 0 auto;">
+                    <div class="channel-num">CH 05</div>
+                    <h3>Calling into character</h3>
+                    <p>God often sets aside our A-or-B choices to work on <em>us</em>. Fruit of the Spirit, humility, patience (Eph 4:2). You never graduate sanctification — his Word is living and active. Pray for patience? God gives <em>opportunities</em>, not instant infusion.</p>
+                    <div class="signal-dots"><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span><span class="lit"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="application" class="tab-content">
+            <div class="content-card">
+                <h2>🎯 Tuning In to the Whisper</h2>
+                <p>God invites a personal relationship — two-way conversation. This week's call: lean in, cancel noise, expect the whisper in ordinary moments.</p>
+            </div>
+
+            <div class="content-card">
+                <h3>🔇 Practice silence</h3>
+                <div class="voice-contrast-grid">
+                    <div class="voice-contrast-card static">
+                        <h4>📡 Competing noise</h4>
+                        <p>Notifications, social feeds, inner loops, fear of others' opinions, self-pity like Elijah's "I alone am left."</p>
+                    </div>
+                    <div class="voice-contrast-card clear">
+                        <h4>📻 Gentle whisper</h4>
+                        <p>Requires posture — ear turned, expectations set, margin made. Nouwen: silence wars against competing voices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-card-icon">🎧</div>
+                    <div class="app-card-title">Cancel the noise</div>
+                    <p>Before checking scores or news, seek God first — Brett's beach walk with Lectio Divina before any swipe.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-card-icon">👂</div>
+                    <div class="app-card-title">Samuel's six words</div>
+                    <p><em>Speak, Lord — your servant is listening.</em> Expectation, surrender, sustained attention — not a one-line prayer and done.</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-card-icon">✝️</div>
+                    <div class="app-card-title">Test every channel</div>
+                    <p>When you sense correction, comfort, clarity, conviction, or character-calling — weigh it against Scripture and godly community.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="highlight-box">
+                    <strong>Ordinary holiness:</strong> God is not limited to church or retreat. The whisper meets you in budget meetings, kitchens, and commutes — if we make room to hear.
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="tab-content">
+            <div class="content-card">
+                <h2>💭 Reflection &amp; Discussion</h2>
+
+                <h3>📝 From the service</h3>
+                <ul class="reflection-list">
+                    <li>When was the last time you were convinced of hearing God's voice? How did you know it was Him?</li>
+                    <li>What is the greatest "noise" in your life that limits your hearing from God?</li>
+                </ul>
+
+                <h3>🔍 Going deeper</h3>
+                <ul class="reflection-list">
+                    <li>Elijah expected revival after fire on Carmel but fled from Jezebel. When have spectacular moments not led to the outcomes you expected — and how did God meet you afterward?</li>
+                    <li>Which of the five ways (correction, comfort, clarity, conviction, character) do you most resist — and why?</li>
+                    <li>Donne said a fly's noise distracted him from God. What is your "fly" — the smallest distraction that pulls you off frequency?</li>
+                    <li>How long can you sit in silence before discomfort rises? What would one extra minute of quiet prayer each day change?</li>
+                    <li>Pray Samuel's prayer aloud slowly: <em>Speak, Lord, for your servant is listening.</em> What does "your servant" cost you this week?</li>
+                </ul>
+
+                <h3>🙏 Prayer prompts</h3>
+                <ul class="reflection-list">
+                    <li><strong>Whisper:</strong> Lord, I do not need only wind and fire — train my ear for the gentle whisper in ordinary days.</li>
+                    <li><strong>Noise:</strong> Quiet the lies and fears that compete with your voice; I take thoughts captive to Christ.</li>
+                    <li><strong>Listen:</strong> Speak, Lord — I am your servant, and I am listening.</li>
+                </ul>
+
+                <h3>⚡ Challenge for the week</h3>
+                <ul class="reflection-list">
+                    <li>Once daily, before opening any app or news, pray Samuel's six words and wait sixty seconds in silence. Note anything you sense — then test it against Scripture.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="attribution" id="attribution" role="contentinfo">
+        <div class="attribution-short" aria-label="Attribution">ℹ️</div>
+        <div class="attribution-full">
+            <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+                Generated by LLM with supervision and polishing by
+                <a href="../index.html" target="_blank" rel="noopener noreferrer">benjaminficusmicrocarpa</a>.
+                <a href="../license.html" target="_blank" rel="noopener noreferrer">MIT License</a>
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/iecc-common.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+  "method": "iecc-handoff-v1-human-curated",
+  "sermon_date": "2026-06-07",
+  "slug": "2026-06-07-tuning-in-the-gentle-whisper-of-god",
+  "pipeline_source": "voice-to-intent-pipeline-v1",
+  "video": {
+    "id": "VvPiJpCDj7M",
+    "url": "https://www.youtube.com/watch?v=VvPiJpCDj7M",
+    "title": "07 June 2026 | Tuning In: The Gentle Whisper Of God",
+    "channel": "Island ECC",
+    "duration_sec": 5824
+  },
+  "metadata": {
+    "date_display": "07 Jun 2026",
+    "speaker": "Pastor Brett",
+    "series": "Tuning In",
+    "series_week": 2,
+    "series_total_weeks": 5,
+    "description": "The everyday Christian experience should be lived with the expectation of hearing from God — not necessarily in dramatic ways, but in the ordinary push and pull of life."
+  },
+  "reflection_questions": [
+    "When was the last time you were convinced of hearing God's voice? How did you know it was Him?",
+    "What is the greatest \"noise\" in your life that limits your hearing from God?"
+  ],
+  "curated_images": [
+    {
+      "role": "hero",
+      "path": "img/tuning-in/2026-06-07/hero-radio.jpg",
+      "source_keyframe": "kf_0171",
+      "timestamp_sec": 2429,
+      "caption": "Vintage Murphy radio — tuning the dial to hear what matters."
+    },
+    {
+      "role": "sermon_speaker",
+      "path": "img/tuning-in/2026-06-07/brett-preaching.jpg",
+      "source_keyframe": "kf_0112",
+      "timestamp_sec": 2935,
+      "caption": "Pastor Brett preaching at Island ECC."
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-isaiah-30-21.jpg",
+      "source_keyframe": "kf_0107",
+      "timestamp_sec": 2773
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-1kings-19-12.jpg",
+      "source_keyframe": "kf_0117",
+      "timestamp_sec": 3179
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-donne.jpg",
+      "source_keyframe": "kf_0122",
+      "timestamp_sec": 3346
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-nouwen.jpg",
+      "source_keyframe": "kf_0125",
+      "timestamp_sec": 3422
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-john-8-32.jpg",
+      "source_keyframe": "kf_0194",
+      "timestamp_sec": 3665
+    },
+    {
+      "role": "slide",
+      "path": "img/tuning-in/2026-06-07/slide-samuel-3-9.jpg",
+      "source_keyframe": "kf_0219",
+      "timestamp_sec": 5114,
+      "caption": "Closing prayer — Speak, Lord."
+    }
+  ],
+  "slides_and_quotes": [
+    {
+      "type": "scripture",
+      "reference": "Isaiah 30:21 (NIV)",
+      "text": "Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, \"This is the way, walk in it.\"",
+      "image": "img/tuning-in/2026-06-07/slide-isaiah-30-21.jpg",
+      "timestamp_sec": 2773
+    },
+    {
+      "type": "scripture",
+      "reference": "1 Kings 19:12 (NIV)",
+      "text": "After the fire came a gentle whisper.",
+      "image": "img/tuning-in/2026-06-07/slide-1kings-19-12.jpg",
+      "timestamp_sec": 3179
+    },
+    {
+      "type": "author",
+      "author": "John Donne",
+      "text": "I neglect God and his angels with the noise of a fly.",
+      "image": "img/tuning-in/2026-06-07/slide-donne.jpg",
+      "timestamp_sec": 3346
+    },
+    {
+      "type": "author",
+      "author": "Henri Nouwen",
+      "text": "Silence is an active war against the competing voices in us and around us.",
+      "image": "img/tuning-in/2026-06-07/slide-nouwen.jpg",
+      "timestamp_sec": 3422
+    },
+    {
+      "type": "scripture",
+      "reference": "John 8:32 (NIV)",
+      "text": "Then you will know the truth, and the truth will set you free.",
+      "image": "img/tuning-in/2026-06-07/slide-john-8-32.jpg",
+      "timestamp_sec": 3665
+    },
+    {
+      "type": "scripture",
+      "reference": "1 Samuel 3:9 (NIV)",
+      "text": "Speak, Lord, for your servant is listening.",
+      "image": "img/tuning-in/2026-06-07/slide-samuel-3-9.jpg",
+      "timestamp_sec": 5114
+    }
+  ],
+  "sermon_text_source": {
+    "file": "enriched.timeline.json",
+    "chapter_filter": "Sermon -",
+    "segment_count": 537,
+    "start_sec": 2438,
+    "end_sec": 5247
+  },
+  "dropped_auto_publish": [
+    { "rank": 1, "reason": "dark ceiling shot" },
+    { "rank": 2, "reason": "worship out of scope" },
+    { "rank": 3, "reason": "worship vocalist not preacher" },
+    { "rank": 9, "reason": "near-black placeholder" },
+    { "rank": 10, "reason": "post-roll newcomers promo" }
+  ]
+}

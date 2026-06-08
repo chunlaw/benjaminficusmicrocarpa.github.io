@@ -49,6 +49,7 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 ### May-June 2026 - Tuning In Series
 | Date | Sermon | Routing | Tags | External CSS/JS |
 |------|--------|---------|------|-----------------|
+| 2026-06-07 | Tuning In: The Gentle Whisper Of God | ✅ | ✅ | ✅ |
 | 2026-05-31 | Tuning In: Hearing the Voice of God | ✅ | ✅ | ✅ |
 
 ### April-May 2026 - Easter / Romans 8 Series
@@ -106,7 +107,7 @@ These sermons have HTML routing for tabs, tags in the hero header, and use exter
 |------|--------|---------|------|-----------------|
 | 2024-10-27 | How We Make Sense of Life | ✅ | ✅ | ✅ |
 
-**Total Fully Implemented: 31 sermons** (with external CSS/JS)
+**Total Fully Implemented: 32 sermons** (with external CSS/JS)
 
 ---
 
@@ -386,9 +387,9 @@ accordionHeaders.forEach(header => {
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| Fully Implemented (all features) | 31 | 43.1% |
-| Missing All Features | 41 | 56.9% |
-| **Total** | **72** | **100%** |
+| Fully Implemented (all features) | 32 | 44.4% |
+| Missing All Features | 41 | 55.6% |
+| **Total** | **73** | **100%** |
 
 ---
 
@@ -420,6 +421,8 @@ To migrate remaining sermons:
 
 ---
 
+*Last updated: 2026-06-08*
+*Added 2026-06-07 (Tuning In: The Gentle Whisper Of God) — Week 2 of 5 with Pastor Brett. 1 Kings 19:12 gentle whisper, Isaiah 30:21, Elijah narrative, John Donne & Henri Nouwen quotes, five ways God speaks (correction, comfort, clarity, conviction, character), 1 Samuel 3:9. Pipeline handoff from voice-to-intent enriched timeline; 8 curated images in `img/tuning-in/2026-06-07/`. Custom **Five Ways God Speaks** tab. `data/2026-06-07-tuning-in-gentle-whisper.handoff.json`. Hero uses real Murphy radio photo. Week 1 roadmap linked.*
 *Last updated: 2026-05-31*
 *Added 2026-05-31 (Tuning In: Hearing the Voice of God) — Week 1 of 5 with Pastor Brett. John 10:27, 10:1-5, Psalm 40:6-8, Exodus 21:5-6, Proverbs 3:5-6, Ephesians 2:19, Hebrews 13:20-21 — FM633 radio intro, acoustic profile (China 1991 / George & Helen), hearing God as life's most desperate need, three reasons (child / protection / success), kara & pierced ear, sheepfold & competing voices, family "inside language." New `css/tuning-in.css` (vintage radio dial: Fraunces + Libre Franklin + Lora). Custom **Four Frequencies** tab (John 10:27 channel cards). `voice-contrast-grid`, `broadcast-quote`, `series-roadmap`. `sermons_data.json` + `key_scriptures.json` entries. New series tag: tuning-in.*
 *Last updated: 2026-05-24*

@@ -91,6 +91,25 @@
   },
   "sermons": [
     {
+      "date": "2026-06-07",
+      "year": 2026,
+      "emoji": "📻",
+      "title": "Tuning In: The Gentle Whisper Of God",
+      "tags": ["tuning-in", "faith", "prayer", "discipleship", "obedience", "identity", "isaiah", "john", "acts", "corinthians", "ephesians"],
+      "displayTags": [
+        { "type": "series", "label": "Tuning In" },
+        { "type": "theme", "label": "faith" },
+        { "type": "topic", "label": "prayer" },
+        { "type": "topic", "label": "discipleship" },
+        { "type": "topic", "label": "obedience" },
+        { "type": "scripture", "label": "Isaiah 30" },
+        { "type": "scripture", "label": "1 Kings 19" },
+        { "type": "scripture", "label": "1 Samuel 3" },
+        { "type": "scripture", "label": "John 8" }
+      ],
+      "link": "2026-06-07-tuning-in-the-gentle-whisper-of-god.html"
+    },
+    {
       "date": "2026-05-31",
       "year": 2026,
       "emoji": "📻",
