@@ -142,7 +142,6 @@ open http://localhost:8000
 ```
 
 This will allow you to test all your HTML files with full functionality, including:
-- The tree database application in `db/tree_form_1/`
 - Your urban forestry pages
 - Any JavaScript that needs to load local files
 - AJAX requests to local JSON files

@@ -27,7 +27,6 @@ A personal digital garden - a curated collection of notes, databases, and visual
 
 | Database | Description |
 |----------|-------------|
-| [Tree Database (TRAM Form 1)](db/tree_form_1/) | Interactive tree identification system with species data from TRAM Form 1 |
 | [Plant Etymology Database](db/plant_etymology/) | Explore the linguistic origins and meanings of plant scientific names |
 | [Plant Attribute Database](db/plant_attribute/) | Comprehensive database of plant characteristics and attributes |
 

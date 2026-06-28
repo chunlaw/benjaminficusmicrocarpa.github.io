@@ -1,6 +1,10 @@
 # GitHub Access Token - DO NOT COMMIT
 github_token.json
 
+# Cloudflare API credentials - DO NOT COMMIT
+.env
+cloudflare.txt
+
 # macOS
 .DS_Store
 **/.DS_Store
@@ -25,3 +29,6 @@ npm-debug.log*
 
 # Local LLM extraction cache (regenerable)
 iecc/kg/.concept_cache.json
+
+# Archived / local-only database copies (not published to GitHub Pages)
+db/~noupload/
