@@ -9,15 +9,46 @@ Options:
     output_file: Path to output JSON file (default: cloudflare_images.json)
 """
 
+import os
 import sys
 import json
 import requests
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List
 
-# Cloudflare API credentials
-ACCOUNT_ID = "17133841c4ac43c421229cc9fd7ba347"
-API_TOKEN = "DMeW9ZW637HztwMNwzBUmBZcSBCKpy1SVGkmSE1L"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+ENV_FILE = REPO_ROOT / ".env"
+
+
+def load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+
+
+def get_cloudflare_credentials() -> tuple[str, str]:
+    load_dotenv(ENV_FILE)
+
+    account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    api_token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+
+    if not account_id or not api_token:
+        print(
+            "Error: Cloudflare credentials not found.\n"
+            "Set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN, or create a .env file:\n"
+            f"  cp {REPO_ROOT / '.env.example'} {ENV_FILE}"
+        )
+        sys.exit(1)
+
+    return account_id, api_token
+
+
+ACCOUNT_ID, API_TOKEN = get_cloudflare_credentials()
 
 # API endpoint
 BASE_URL = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/images/v1"

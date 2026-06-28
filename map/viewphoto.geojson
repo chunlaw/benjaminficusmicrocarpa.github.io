@@ -14,7 +14,7 @@
     "fid": 1,
     "filename": "wkcd_001",
     "rotation": 300,
-    "image_id": "f64f21ad-b20a-4167-beb2-3145ec545900"
+    "image_id": "060e2e71-e765-4c7c-c94a-bfe09948f500"
    },
    "geometry": {
     "type": "Point",
@@ -31,7 +31,7 @@
     "fid": 2,
     "filename": "wkcd_002",
     "rotation": 220,
-    "image_id": "fb5b1dd3-355e-4aca-9fbc-47b4c33bf600"
+    "image_id": "e6802439-58e2-44dd-b576-2fa07b550100"
    },
    "geometry": {
     "type": "Point",
@@ -48,7 +48,7 @@
     "fid": 3,
     "filename": "wkcd_003",
     "rotation": 210,
-    "image_id": "395b259e-0830-4b74-329c-41e26b3ab600"
+    "image_id": "0ddb1572-2bde-4d0f-41d8-5ea65f911600"
    },
    "geometry": {
     "type": "Point",
@@ -65,7 +65,7 @@
     "fid": 4,
     "filename": "wkcd_004",
     "rotation": 20,
-    "image_id": "b594bb67-2d90-4b9f-8f12-bddcf1987b00"
+    "image_id": "287b1295-59dd-4a22-b394-5907e6bb0c00"
    },
    "geometry": {
     "type": "Point",
@@ -82,7 +82,7 @@
     "fid": 5,
     "filename": "wkcd_005",
     "rotation": 300,
-    "image_id": "4f5a0108-e3c5-4870-e11f-dbf52a7ee000"
+    "image_id": "c5eafd05-3c98-4b7a-f347-1ddac3794e00"
    },
    "geometry": {
     "type": "Point",
@@ -99,7 +99,7 @@
     "fid": 6,
     "filename": "wkcd_006",
     "rotation": 300,
-    "image_id": "36da76f1-2ffa-404e-40d2-84f1cb863300"
+    "image_id": "8a0e921e-73b1-4944-3a78-f45aab244600"
    },
    "geometry": {
     "type": "Point",
@@ -116,7 +116,7 @@
     "fid": 7,
     "filename": "wkcd_007",
     "rotation": 150,
-    "image_id": "28bd848e-0bc2-423d-a773-7fd36b194100"
+    "image_id": "f557aad4-fae3-4c48-47c4-3328af264300"
    },
    "geometry": {
     "type": "Point",
@@ -133,7 +133,7 @@
     "fid": 8,
     "filename": "wkcd_008",
     "rotation": 40,
-    "image_id": "11d9d133-ccf7-43f1-2dc5-96b2da0b0400"
+    "image_id": "8326a926-03d1-465d-da7b-04dbf996a700"
    },
    "geometry": {
     "type": "Point",
@@ -150,7 +150,7 @@
     "fid": 9,
     "filename": "wkcd_009",
     "rotation": 140,
-    "image_id": "442d8d7e-f6eb-4970-92af-9481a6429400"
+    "image_id": "3846a0cb-1d2b-451d-8660-5cc110996200"
    },
    "geometry": {
     "type": "Point",
@@ -167,7 +167,7 @@
     "fid": 10,
     "filename": "wkcd_010",
     "rotation": 40,
-    "image_id": "33e4d3eb-15ad-4216-d454-f8e3d7615400"
+    "image_id": "d2511ff3-c47d-4224-3b71-0996f0816600"
    },
    "geometry": {
     "type": "Point",
@@ -184,7 +184,7 @@
     "fid": 11,
     "filename": "wkcd_011",
     "rotation": 150,
-    "image_id": "142a6aaf-ee5c-4ac2-65c8-afc1f3541800"
+    "image_id": "3c36e876-2ba9-43ea-06aa-eaddd3aad600"
    },
    "geometry": {
     "type": "Point",
@@ -201,7 +201,7 @@
     "fid": 12,
     "filename": "wkcd_012",
     "rotation": 150,
-    "image_id": "b4c50f95-6296-4e39-0d0a-d8bbc8d50000"
+    "image_id": "9ef29334-f165-4ffd-39b5-f4af61d83d00"
    },
    "geometry": {
     "type": "Point",
@@ -218,7 +218,7 @@
     "fid": 13,
     "filename": "wkcd_013",
     "rotation": 20,
-    "image_id": "b61a986f-9772-44fd-2678-8d1233fec200"
+    "image_id": "f86cf7a7-7427-4cdb-c115-30d8b52dc600"
    },
    "geometry": {
     "type": "Point",
@@ -235,7 +235,7 @@
     "fid": 14,
     "filename": "wkcd_014",
     "rotation": 350,
-    "image_id": "152e2277-1ca1-4f74-f972-281d504b6400"
+    "image_id": "e5a5e526-185a-41d9-f0bb-d153a3dc5b00"
    },
    "geometry": {
     "type": "Point",
@@ -252,7 +252,7 @@
     "fid": 15,
     "filename": "wkcd_015",
     "rotation": 110,
-    "image_id": "a84731e9-15c4-46b8-b7f3-d5fba07a1d00"
+    "image_id": "a31214a1-0b35-4545-ea53-86aa535d7b00"
    },
    "geometry": {
     "type": "Point",
@@ -269,7 +269,7 @@
     "fid": 16,
     "filename": "wkcd_016",
     "rotation": 90,
-    "image_id": "ef32dbe8-74e8-49a7-d78c-367510188c00"
+    "image_id": "c6196d43-15a7-4fed-7a9d-9a4e74c17c00"
    },
    "geometry": {
     "type": "Point",
@@ -286,7 +286,7 @@
     "fid": 17,
     "filename": "wkcd_017",
     "rotation": 140,
-    "image_id": "f70e414a-8e98-4059-dcec-24ba60944200"
+    "image_id": "cdc8fdec-6ff1-4928-17b3-b208866a1800"
    },
    "geometry": {
     "type": "Point",
@@ -303,7 +303,7 @@
     "fid": 18,
     "filename": "wkcd_018",
     "rotation": 170,
-    "image_id": "354c21f2-32b4-404e-f911-52cec4e3ab00"
+    "image_id": "8635f8e5-1fe1-4d1d-5e3b-9030e22f4600"
    },
    "geometry": {
     "type": "Point",
@@ -320,7 +320,7 @@
     "fid": 19,
     "filename": "wkcd_019",
     "rotation": 290,
-    "image_id": "afd3f5c6-7166-4ebf-c736-70a3791b2900"
+    "image_id": "82c6b7ee-68f6-4def-63e0-9a35368d6800"
    },
    "geometry": {
     "type": "Point",
@@ -337,7 +337,7 @@
     "fid": 20,
     "filename": "wkcd_020",
     "rotation": 310,
-    "image_id": "7aabb388-95dc-4e9f-f66c-3e154d28c200"
+    "image_id": "e5afe410-19fc-464e-6a8c-7f95df36b300"
    },
    "geometry": {
     "type": "Point",
@@ -354,7 +354,7 @@
     "fid": 21,
     "filename": "wkcd_021",
     "rotation": 110,
-    "image_id": "55279022-ba7f-4bd7-f9b3-8e316a692400"
+    "image_id": "dbbedd87-0032-4a7e-2294-2cb396febc00"
    },
    "geometry": {
     "type": "Point",
@@ -371,7 +371,7 @@
     "fid": 22,
     "filename": "wkcd_022",
     "rotation": 140,
-    "image_id": "f2bcf6ce-6b43-44b7-634c-72c4652b8000"
+    "image_id": "7371f9f7-9e48-4237-d86c-e7909f419600"
    },
    "geometry": {
     "type": "Point",
@@ -388,7 +388,7 @@
     "fid": 23,
     "filename": "wkcd_023",
     "rotation": 230,
-    "image_id": "a0f16c40-82af-4fcd-b1b6-c28b6da28500"
+    "image_id": "4add3003-4afc-4722-67e2-cb3d7a228b00"
    },
    "geometry": {
     "type": "Point",
@@ -405,7 +405,7 @@
     "fid": 24,
     "filename": "wkcd_024",
     "rotation": 140,
-    "image_id": "2ed7e5e2-1358-4df5-32c8-b082c8c68500"
+    "image_id": "45dcc74a-6b86-406e-c10c-d9e0a8af7300"
    },
    "geometry": {
     "type": "Point",
@@ -422,7 +422,7 @@
     "fid": 25,
     "filename": "wkcd_025",
     "rotation": 100,
-    "image_id": "657fbcc7-3b21-4e8d-fe5a-c0576c963100"
+    "image_id": "62310c2e-9f47-4a3b-c3db-210f66559c00"
    },
    "geometry": {
     "type": "Point",
@@ -439,7 +439,7 @@
     "fid": 26,
     "filename": "wkcd_026",
     "rotation": 250,
-    "image_id": "9ff73487-28fd-46c2-393f-11e01c4c0300"
+    "image_id": "2aa7a470-1ffd-48f9-edbb-04e0956c8800"
    },
    "geometry": {
     "type": "Point",
@@ -456,7 +456,7 @@
     "fid": 27,
     "filename": "wkcd_027",
     "rotation": 330,
-    "image_id": "ac220f7d-d32d-4c35-b5f6-141c2761b000"
+    "image_id": "9f64482b-8b64-4ea0-9fe7-dc54f5fb7f00"
    },
    "geometry": {
     "type": "Point",
@@ -473,7 +473,7 @@
     "fid": 28,
     "filename": "wkcd_028",
     "rotation": 270,
-    "image_id": "b98c9594-a221-4d3f-43fc-54b4bb8e9b00"
+    "image_id": "e9dde6f7-4336-4ba1-0783-58925a9e7d00"
    },
    "geometry": {
     "type": "Point",
@@ -490,7 +490,7 @@
     "fid": 29,
     "filename": "wkcd_029",
     "rotation": 30,
-    "image_id": "3ccb2c21-bb66-4227-5f20-5a74cc220900"
+    "image_id": "3148abdf-68a8-4eed-6930-60f68f213800"
    },
    "geometry": {
     "type": "Point",
@@ -507,7 +507,7 @@
     "fid": 30,
     "filename": "wkcd_030",
     "rotation": 270,
-    "image_id": "b653430e-3828-4a0d-9949-6d0d5a6d6f00"
+    "image_id": "4633a245-84cb-45c5-2be1-074ac47af900"
    },
    "geometry": {
     "type": "Point",
@@ -524,7 +524,7 @@
     "fid": 31,
     "filename": "wkcd_031",
     "rotation": 270,
-    "image_id": "04201bc3-5f4d-492e-c766-d110083de200"
+    "image_id": "f9f904e5-36ea-4c07-0efe-66a7a8426900"
    },
    "geometry": {
     "type": "Point",
@@ -541,7 +541,7 @@
     "fid": 32,
     "filename": "wkcd_032",
     "rotation": 70,
-    "image_id": "5b5541db-20a3-4d68-bff4-1dacaaaf8000"
+    "image_id": "7c8f5622-2315-4e61-3160-4dd46bea2300"
    },
    "geometry": {
     "type": "Point",
@@ -558,7 +558,7 @@
     "fid": 33,
     "filename": "wkcd_033",
     "rotation": 0,
-    "image_id": "087c7b9d-9cac-4140-c332-9849d327c300"
+    "image_id": "18b7b142-3833-4b73-487f-3a3de0cfaf00"
    },
    "geometry": {
     "type": "Point",
@@ -575,7 +575,7 @@
     "fid": 34,
     "filename": "wkcd_034",
     "rotation": 340,
-    "image_id": "0096c0f9-d628-44fb-d892-e7daeefd2a00"
+    "image_id": "33dcdf72-b179-48d8-5371-00d6f105f400"
    },
    "geometry": {
     "type": "Point",
@@ -592,7 +592,7 @@
     "fid": 35,
     "filename": "wkcd_035",
     "rotation": 340,
-    "image_id": "53f89bd6-b08f-46f2-7d91-b9c4196f5c00"
+    "image_id": "f599767d-c0e1-49c2-a6d4-d421c053fe00"
    },
    "geometry": {
     "type": "Point",
@@ -609,7 +609,7 @@
     "fid": 36,
     "filename": "wkcd_036",
     "rotation": 70,
-    "image_id": "96f2272b-87d7-439e-dae3-bb0bd7ac9a00"
+    "image_id": "a7b5e7b4-af9c-4686-b61b-f6797febc500"
    },
    "geometry": {
     "type": "Point",
@@ -626,7 +626,7 @@
     "fid": 37,
     "filename": "wkcd_037",
     "rotation": 10,
-    "image_id": "ba2f3c38-81ad-4477-ad38-85212b119c00"
+    "image_id": "c7d7f274-814a-4d60-72bc-22ded4378a00"
    },
    "geometry": {
     "type": "Point",
@@ -643,7 +643,7 @@
     "fid": 38,
     "filename": "wkcd_038",
     "rotation": 100,
-    "image_id": "e86d7cc4-a8a4-4d9b-d0ea-08bd555f0d00"
+    "image_id": "c48a4c16-dc39-446c-f5e1-cf480c143100"
    },
    "geometry": {
     "type": "Point",
@@ -660,7 +660,7 @@
     "fid": 40,
     "filename": "wkcd_039",
     "rotation": 110,
-    "image_id": "a7b38538-f7ee-4c51-d6c3-f23644624600"
+    "image_id": "543618ee-3a57-471a-de05-5353a439b700"
    },
    "geometry": {
     "type": "Point",
@@ -677,7 +677,7 @@
     "fid": 42,
     "filename": "wkcd_040",
     "rotation": 90,
-    "image_id": "ad678821-a4dd-45b5-4591-7296a96aa500"
+    "image_id": "69ed78db-a3b8-4651-ae50-1e72b929a400"
    },
    "geometry": {
     "type": "Point",
@@ -694,7 +694,7 @@
     "fid": 44,
     "filename": "wkcd_041",
     "rotation": 40,
-    "image_id": "788c6282-8064-48c9-5e14-bc801b054300"
+    "image_id": "c7960ee7-45b9-4217-95a6-f4fde5749d00"
    },
    "geometry": {
     "type": "Point",
@@ -711,7 +711,7 @@
     "fid": 45,
     "filename": "wkcd_042",
     "rotation": 180,
-    "image_id": "a5797a04-2399-4298-5601-c299335e0d00"
+    "image_id": "235efe9f-adc2-4c49-2b38-69ca71002200"
    },
    "geometry": {
     "type": "Point",
@@ -728,7 +728,7 @@
     "fid": 46,
     "filename": "wkcd_043",
     "rotation": 30,
-    "image_id": "656445e1-6aa1-4926-f503-0f377d65ff00"
+    "image_id": "e2211c3c-cdbf-4374-96eb-60c985144400"
    },
    "geometry": {
     "type": "Point",
@@ -745,7 +745,7 @@
     "fid": 47,
     "filename": "wkcd_044",
     "rotation": 310,
-    "image_id": "8aa411db-1b6c-4c2e-25b1-e800dddd7b00"
+    "image_id": "3c94d978-78c8-4765-1522-be2d66cbaf00"
    },
    "geometry": {
     "type": "Point",
@@ -762,7 +762,7 @@
     "fid": 48,
     "filename": "wkcd_045",
     "rotation": 170,
-    "image_id": "5aa2dbff-3079-460e-5bc6-9be9f1429600"
+    "image_id": "1608283c-1dcd-41b7-0444-1704f64b4700"
    },
    "geometry": {
     "type": "Point",
@@ -779,7 +779,7 @@
     "fid": 49,
     "filename": "wkcd_046",
     "rotation": 170,
-    "image_id": "b771ceb0-bc31-408b-b88b-1d76b9373100"
+    "image_id": "0129e86d-a49f-46b2-dc71-e375a0f45d00"
    },
    "geometry": {
     "type": "Point",
@@ -796,7 +796,7 @@
     "fid": 50,
     "filename": "wkcd_047",
     "rotation": 100,
-    "image_id": "5d0f6d8d-f211-4908-25eb-14004463ca00"
+    "image_id": "2a5273ee-ca2a-49d5-d8bb-43ff96897500"
    },
    "geometry": {
     "type": "Point",
@@ -813,7 +813,7 @@
     "fid": 51,
     "filename": "wkcd_048",
     "rotation": 70,
-    "image_id": "8770758a-8ab3-40e3-4909-089bc1841a00"
+    "image_id": "13d64254-b15b-482a-8baa-1f026501bd00"
    },
    "geometry": {
     "type": "Point",
@@ -830,7 +830,7 @@
     "fid": 52,
     "filename": "wkcd_049",
     "rotation": 220,
-    "image_id": "d73f1865-7510-4887-b1df-aebf66286500"
+    "image_id": "ed887e19-9618-44c2-0081-a9e6ef836b00"
    },
    "geometry": {
     "type": "Point",
@@ -847,7 +847,7 @@
     "fid": 53,
     "filename": "wkcd_050",
     "rotation": 100,
-    "image_id": "301c0254-de22-4a48-b6ac-1201b1659400"
+    "image_id": "60f1fc92-f95f-4941-3aff-a9fbc3c67b00"
    },
    "geometry": {
     "type": "Point",
@@ -864,7 +864,7 @@
     "fid": 54,
     "filename": "wkcd_051",
     "rotation": 80,
-    "image_id": "98f59820-ccc6-41cd-5985-fcf4b18aac00"
+    "image_id": "bc63ce44-8e78-4dc1-936a-c0a41fe89e00"
    },
    "geometry": {
     "type": "Point",
@@ -881,7 +881,7 @@
     "fid": 55,
     "filename": "wkcd_052",
     "rotation": 300,
-    "image_id": "1b1dc8e3-6561-4040-f969-da76afbae400"
+    "image_id": "88878f72-2aaf-4da0-16d0-84e753c86000"
    },
    "geometry": {
     "type": "Point",
@@ -898,7 +898,7 @@
     "fid": 56,
     "filename": "wkcd_053",
     "rotation": 270,
-    "image_id": "1b0a2cdf-09d6-4d05-5dd7-06edbfbf6500"
+    "image_id": "579aec38-bfee-4162-3f69-10137b7b7b00"
    },
    "geometry": {
     "type": "Point",
@@ -915,7 +915,7 @@
     "fid": 57,
     "filename": "wkcd_054",
     "rotation": 0,
-    "image_id": "f9525804-3e1c-4e92-41ff-fe9383c0cb00"
+    "image_id": "8847c6ab-e2a2-4bf5-da39-1102c94f1a00"
    },
    "geometry": {
     "type": "Point",
@@ -932,7 +932,7 @@
     "fid": 58,
     "filename": "wkcd_055",
     "rotation": 0,
-    "image_id": "321069b3-0512-44ff-a6ed-73440681b000"
+    "image_id": "5657a391-6c17-4680-436d-9f7559412b00"
    },
    "geometry": {
     "type": "Point",
@@ -949,7 +949,7 @@
     "fid": 59,
     "filename": "wkcd_056",
     "rotation": 310,
-    "image_id": "a32fcc89-a130-40bd-267b-e9e83f25a300"
+    "image_id": "13dfdeb8-2925-4e1e-ed26-8e499c578b00"
    },
    "geometry": {
     "type": "Point",
@@ -966,7 +966,7 @@
     "fid": 60,
     "filename": "wkcd_057",
     "rotation": 0,
-    "image_id": "9e51a011-9511-4714-cf8a-41bd074b3700"
+    "image_id": "48fe4438-b41a-4424-1951-91fcd1697a00"
    },
    "geometry": {
     "type": "Point",
@@ -983,7 +983,7 @@
     "fid": 61,
     "filename": "wkcd_058",
     "rotation": 30,
-    "image_id": "62c94445-f33f-4821-4898-f651b6b8a200"
+    "image_id": "47ffb7ff-11ad-4b57-22cb-b57639af2800"
    },
    "geometry": {
     "type": "Point",
@@ -1000,7 +1000,7 @@
     "fid": 62,
     "filename": "wkcd_059",
     "rotation": 0,
-    "image_id": "5c9dc6a1-4a0a-4e3d-11e5-9002fadcdf00"
+    "image_id": "93a277c5-6438-4003-f48a-f3bf9dd81400"
    },
    "geometry": {
     "type": "Point",
@@ -1017,7 +1017,7 @@
     "fid": 63,
     "filename": "wkcd_060",
     "rotation": 90,
-    "image_id": "032e7f2b-e6e3-42d4-0755-099c06133500"
+    "image_id": "8f8f2fe5-550d-42d5-5dd0-96ac31b3ae00"
    },
    "geometry": {
     "type": "Point",
@@ -1034,7 +1034,7 @@
     "fid": 64,
     "filename": "wkcd_061",
     "rotation": 240,
-    "image_id": "229581da-37c6-44c8-0e8d-05e1bbe7a500"
+    "image_id": "6a73b2e4-79e5-4661-182f-06596fa53b00"
    },
    "geometry": {
     "type": "Point",
@@ -1051,7 +1051,7 @@
     "fid": 65,
     "filename": "wkcd_062",
     "rotation": 0,
-    "image_id": "9f03865f-fd7d-4dce-284d-b004f682af00"
+    "image_id": "b2ee9b04-5c66-4383-08b7-24a66ee79b00"
    },
    "geometry": {
     "type": "Point",
@@ -1068,7 +1068,7 @@
     "fid": 66,
     "filename": "wkcd_063",
     "rotation": 180,
-    "image_id": "1872cd96-05a0-4fb4-4ad1-de0a1320fa00"
+    "image_id": "82336934-0f39-4eda-c994-0611528edd00"
    },
    "geometry": {
     "type": "Point",
@@ -1085,7 +1085,7 @@
     "fid": 67,
     "filename": "wkcd_064",
     "rotation": 30,
-    "image_id": "b7e6533e-e529-45c2-38a6-84746bcc8900"
+    "image_id": "74d8ca91-10f7-4bd0-087c-212803307900"
    },
    "geometry": {
     "type": "Point",
@@ -1102,7 +1102,7 @@
     "fid": 68,
     "filename": "wkcd_065",
     "rotation": 0,
-    "image_id": "2fd6371e-436a-4edf-442d-7889a4531800"
+    "image_id": "082fe01b-d75c-4acb-a17c-e666318c0a00"
    },
    "geometry": {
     "type": "Point",
@@ -1119,7 +1119,7 @@
     "fid": 69,
     "filename": "wkcd_066",
     "rotation": 210,
-    "image_id": "3a1e3526-789d-4716-53d5-a9f2086fca00"
+    "image_id": "b504248b-7176-42b1-57e2-dacaeeb52a00"
    },
    "geometry": {
     "type": "Point",
@@ -1136,7 +1136,7 @@
     "fid": 70,
     "filename": "wkcd_067",
     "rotation": 90,
-    "image_id": "f08000bc-2551-4e17-e236-3e6ec0023e00"
+    "image_id": "c0dbb2b6-8794-4adf-e5f7-8a5c50a7a600"
    },
    "geometry": {
     "type": "Point",
@@ -1153,7 +1153,7 @@
     "fid": 71,
     "filename": "wkcd_068",
     "rotation": 60,
-    "image_id": "bd5c3a43-8e3d-4e0b-6cb5-2c72c7686b00"
+    "image_id": "89f92fd8-ce83-4b07-9545-79bffc821400"
    },
    "geometry": {
     "type": "Point",
@@ -1170,7 +1170,7 @@
     "fid": 72,
     "filename": "wkcd_069",
     "rotation": 140,
-    "image_id": "3d6dfa47-9aa5-4b3b-9b0e-eb2909bb7200"
+    "image_id": "1182ff3d-b1db-44aa-2220-da336e606900"
    },
    "geometry": {
     "type": "Point",
@@ -1187,7 +1187,7 @@
     "fid": 73,
     "filename": "wkcd_070",
     "rotation": 270,
-    "image_id": "b6f2b80c-6ca6-4271-559e-350fc7537b00"
+    "image_id": "e359458f-48c1-4264-4daa-b0364a377200"
    },
    "geometry": {
     "type": "Point",
@@ -1204,7 +1204,7 @@
     "fid": 74,
     "filename": "wkcd_071",
     "rotation": 0,
-    "image_id": "775c5245-6edd-4ddb-677b-3552f5b0b800"
+    "image_id": "b1882a0b-72d8-43f4-8497-7d79601e3500"
    },
    "geometry": {
     "type": "Point",
@@ -1221,7 +1221,7 @@
     "fid": 75,
     "filename": "wkcd_072",
     "rotation": 0,
-    "image_id": "c341ba06-6042-4f65-54dd-efd0aa8fa900"
+    "image_id": "74993119-74c8-443c-a291-5847867bc600"
    },
    "geometry": {
     "type": "Point",
@@ -1238,7 +1238,7 @@
     "fid": 76,
     "filename": "wkcd_073",
     "rotation": 140,
-    "image_id": "219a99e8-0ee9-49c7-2eee-9569e7d24c00"
+    "image_id": "ef4f0cd5-693e-4695-a1eb-724b884e7500"
    },
    "geometry": {
     "type": "Point",
@@ -1255,7 +1255,7 @@
     "fid": 77,
     "filename": "wkcd_074",
     "rotation": 200,
-    "image_id": "fdd81bed-d523-4e07-a4ec-b375c047e500"
+    "image_id": "2c69fb23-5329-4d73-64ae-e63f90290800"
    },
    "geometry": {
     "type": "Point",
@@ -1272,7 +1272,7 @@
     "fid": 78,
     "filename": "wkcd_075",
     "rotation": 30,
-    "image_id": "04c0d393-18cc-4ac5-0b05-a9b84b75b200"
+    "image_id": "9b872ae7-5e25-4fd4-45dc-ce396bd6ab00"
    },
    "geometry": {
     "type": "Point",
@@ -1289,7 +1289,7 @@
     "fid": 79,
     "filename": "wkcd_076",
     "rotation": 220,
-    "image_id": "86579f55-d574-4031-37db-fc9a33a28500"
+    "image_id": "2ea71a5e-6f10-4c97-3cdf-3de91e05e300"
    },
    "geometry": {
     "type": "Point",
@@ -1306,7 +1306,7 @@
     "fid": 80,
     "filename": "wkcd_077",
     "rotation": 0,
-    "image_id": "80e2fdba-5c4c-47c5-b701-d7e2516e4500"
+    "image_id": "54b30beb-d495-4f9d-165a-bcd9ca0b0500"
    },
    "geometry": {
     "type": "Point",
@@ -1323,7 +1323,7 @@
     "fid": 81,
     "filename": "wkcd_078",
     "rotation": 180,
-    "image_id": "4e6474a7-829e-4696-1402-94799940a600"
+    "image_id": "ef46b285-2428-4e9a-f1a7-8e6527617000"
    },
    "geometry": {
     "type": "Point",
@@ -1340,7 +1340,7 @@
     "fid": 82,
     "filename": "wkcd_079",
     "rotation": 300,
-    "image_id": "1daf8d4c-b3f5-40fc-96ea-702e5db9ad00"
+    "image_id": "5cebce83-2cbd-4ece-4c85-ce95c27dcf00"
    },
    "geometry": {
     "type": "Point",
@@ -1357,7 +1357,7 @@
     "fid": 83,
     "filename": "wkcd_080",
     "rotation": 0,
-    "image_id": "4be149d9-6a05-4785-004f-4f0831a0f700"
+    "image_id": "bf1ae075-645d-45e3-72c8-8cc9a3b44d00"
    },
    "geometry": {
     "type": "Point",
@@ -1374,7 +1374,7 @@
     "fid": 84,
     "filename": "wkcd_081",
     "rotation": 300,
-    "image_id": "6e1142bc-9ca7-4af9-0f07-509ae9a05f00"
+    "image_id": "eed8665f-8c55-4b2f-c4b5-f5d9e34f3a00"
    },
    "geometry": {
     "type": "Point",
@@ -1391,7 +1391,7 @@
     "fid": 85,
     "filename": "wkcd_082",
     "rotation": 10,
-    "image_id": "946e6022-5a8e-4ac2-81a6-5386dfc61400"
+    "image_id": "1bd74c15-581e-4eab-7c91-abaedf17a700"
    },
    "geometry": {
     "type": "Point",
@@ -1408,7 +1408,7 @@
     "fid": 86,
     "filename": "wkcd_083",
     "rotation": 200,
-    "image_id": "368fbd2a-eaa0-4570-50ba-40149a32af00"
+    "image_id": "2abec32b-a2a9-488a-ea62-c5e23d121200"
    },
    "geometry": {
     "type": "Point",
@@ -1425,7 +1425,7 @@
     "fid": 88,
     "filename": "wkcd_084",
     "rotation": 180,
-    "image_id": "12bed938-bad0-475d-5f8f-1b2d18fc5700"
+    "image_id": "1d37eeda-9285-4597-9791-72ed07c50a00"
    },
    "geometry": {
     "type": "Point",
@@ -1442,7 +1442,7 @@
     "fid": 89,
     "filename": "wkcd_085",
     "rotation": 210,
-    "image_id": "84d879f4-6ba4-4ae3-3af9-ef6f8f33d400"
+    "image_id": "b1cc93ea-6311-4253-bf47-3ee9ff1fa800"
    },
    "geometry": {
     "type": "Point",
@@ -1459,7 +1459,7 @@
     "fid": 90,
     "filename": "wkcd_086",
     "rotation": 210,
-    "image_id": "ecc8542c-2205-487e-7d83-56263f5b0200"
+    "image_id": "ce3a68a3-6e42-44a5-af77-7e3294e88f00"
    },
    "geometry": {
     "type": "Point",
@@ -1476,7 +1476,7 @@
     "fid": 91,
     "filename": "wkcd_087",
     "rotation": 70,
-    "image_id": "5ab6cd5c-5f0c-4588-7534-0314c091ae00"
+    "image_id": "ba5c4163-9107-4c6d-3e19-1b05595eb000"
    },
    "geometry": {
     "type": "Point",
@@ -1493,7 +1493,7 @@
     "fid": 92,
     "filename": "wkcd_088",
     "rotation": 230,
-    "image_id": "cada4487-b57a-4c23-1a87-fbad7ce3e900"
+    "image_id": "b49fc575-9ff1-473a-e7e7-80ee6021b600"
    },
    "geometry": {
     "type": "Point",
@@ -1510,7 +1510,7 @@
     "fid": 94,
     "filename": "wkcd_089",
     "rotation": 0,
-    "image_id": "afde1e4a-caa5-46cd-fcbe-977307a5ba00"
+    "image_id": "f09f8a63-91cd-4af8-1cf8-fe5b2e9e7500"
    },
    "geometry": {
     "type": "Point",
@@ -1527,7 +1527,7 @@
     "fid": 95,
     "filename": "wkcd_090",
     "rotation": 180,
-    "image_id": "7face7c8-247f-4f15-b552-9124a1466400"
+    "image_id": "95a9ca15-32c9-40fe-ea51-6eee1792df00"
    },
    "geometry": {
     "type": "Point",
@@ -1544,7 +1544,7 @@
     "fid": 96,
     "filename": "wkcd_091",
     "rotation": 90,
-    "image_id": "40d012c4-8fbd-47b7-96aa-164bcd225000"
+    "image_id": "c057efc8-cd28-4b71-70df-88acd0191700"
    },
    "geometry": {
     "type": "Point",
@@ -1561,7 +1561,7 @@
     "fid": 97,
     "filename": "wkcd_092",
     "rotation": 180,
-    "image_id": "46ba0cc2-8849-4bae-dccf-eb06248e7000"
+    "image_id": "53516bc6-d58e-4be5-3448-51e618a7a100"
    },
    "geometry": {
     "type": "Point",
@@ -1578,7 +1578,7 @@
     "fid": 98,
     "filename": "wkcd_093",
     "rotation": 190,
-    "image_id": "a046cc74-4412-4bca-e741-bf22e28f8900"
+    "image_id": "17ee63fb-49e3-459a-d664-fe9dd3e26b00"
    },
    "geometry": {
     "type": "Point",
@@ -1595,7 +1595,7 @@
     "fid": 99,
     "filename": "wkcd_094",
     "rotation": 0,
-    "image_id": "621a9ad8-f2c3-4a22-708d-e195d2dd2800"
+    "image_id": "65f0d32f-b31e-4963-ef78-1fa5179c5e00"
    },
    "geometry": {
     "type": "Point",
@@ -1612,7 +1612,7 @@
     "fid": 100,
     "filename": "wkcd_095",
     "rotation": 90,
-    "image_id": "1b5edaa4-9d81-4adc-a607-39189a1dde00"
+    "image_id": "14b6fc1f-2333-4fc8-2f89-00d983bcac00"
    },
    "geometry": {
     "type": "Point",
@@ -1629,7 +1629,7 @@
     "fid": 101,
     "filename": "wkcd_096",
     "rotation": 0,
-    "image_id": "5ab3badc-4775-439d-6da6-74de654c0300"
+    "image_id": "e06e4b7e-4181-4bdc-3952-ba09fd02b000"
    },
    "geometry": {
     "type": "Point",
@@ -1646,7 +1646,7 @@
     "fid": 102,
     "filename": "wkcd_097",
     "rotation": 90,
-    "image_id": "673c2a72-b826-4cf5-24b1-a46c03e3cf00"
+    "image_id": "cdc8a498-7c1e-4cdd-8cf3-829c6b528900"
    },
    "geometry": {
     "type": "Point",
@@ -1663,7 +1663,7 @@
     "fid": 103,
     "filename": "wkcd_098",
     "rotation": 70,
-    "image_id": "ed82adc2-dadc-4821-1280-fafc8d529d00"
+    "image_id": "2a441140-fcc2-4830-ba3e-9fa825b35400"
    },
    "geometry": {
     "type": "Point",
@@ -1680,7 +1680,7 @@
     "fid": 104,
     "filename": "wkcd_099",
     "rotation": 350,
-    "image_id": "d2bac0cc-0908-4c6b-d2db-10af4c8b5900"
+    "image_id": "11c5af7a-ffc1-4ca0-bf50-fdec368e1100"
    },
    "geometry": {
     "type": "Point",
@@ -1697,7 +1697,7 @@
     "fid": 105,
     "filename": "wkcd_100",
     "rotation": 180,
-    "image_id": "a7a9cc6e-dca9-4c8d-84f2-bc9a56859700"
+    "image_id": "b52ea125-9b2b-435a-572b-4f7fce113900"
    },
    "geometry": {
     "type": "Point",
@@ -1714,7 +1714,7 @@
     "fid": 106,
     "filename": "wkcd_101",
     "rotation": 180,
-    "image_id": "419e4511-1d22-4340-0a46-0cc29acde800"
+    "image_id": "a8c6cbf9-affa-4dd2-3fd1-39549e5fab00"
    },
    "geometry": {
     "type": "Point",
@@ -1731,7 +1731,7 @@
     "fid": 107,
     "filename": "wkcd_102",
     "rotation": 70,
-    "image_id": "0a821664-13a0-4cd7-6564-f6a7a5029600"
+    "image_id": "a1e21121-5b82-4fc8-dea7-ea50884e7400"
    },
    "geometry": {
     "type": "Point",
@@ -1748,7 +1748,7 @@
     "fid": 108,
     "filename": "wkcd_103",
     "rotation": 30,
-    "image_id": "3631b82f-0816-428c-3429-a0ba08261100"
+    "image_id": "041f361b-3bfa-49e0-f231-c1fdb1de6100"
    },
    "geometry": {
     "type": "Point",
@@ -1765,7 +1765,7 @@
     "fid": 109,
     "filename": "wkcd_104",
     "rotation": 70,
-    "image_id": "13242d56-1da4-46d1-6f32-be3f05ccb800"
+    "image_id": "cb41b164-9827-44d6-55a9-45f73d70f200"
    },
    "geometry": {
     "type": "Point",
@@ -1782,7 +1782,7 @@
     "fid": 110,
     "filename": "wkcd_105",
     "rotation": 280,
-    "image_id": "59bb6b64-870f-4a89-c01d-3d6836049200"
+    "image_id": "ac4ea656-89b6-4eea-14d1-44f0e2828d00"
    },
    "geometry": {
     "type": "Point",
@@ -1799,7 +1799,7 @@
     "fid": 111,
     "filename": "wkcd_106",
     "rotation": 210,
-    "image_id": "1fe76222-706c-4237-cd6b-2a8560c7fe00"
+    "image_id": "57cfb1d8-08bd-4ce1-c086-c10ee6ad3200"
    },
    "geometry": {
     "type": "Point",
@@ -1816,7 +1816,7 @@
     "fid": 113,
     "filename": "wkcd_107",
     "rotation": 30,
-    "image_id": "e27c1c20-15c9-4e03-f188-df0613ea5700"
+    "image_id": "b962c4d3-4fbf-4aa9-ea2b-2ecd612c7200"
    },
    "geometry": {
     "type": "Point",
@@ -1833,7 +1833,7 @@
     "fid": 114,
     "filename": "wkcd_108",
     "rotation": 180,
-    "image_id": "f194abdc-514c-4284-e3de-e58dfce24c00"
+    "image_id": "1f673985-c5ba-4480-e133-c78eef323900"
    },
    "geometry": {
     "type": "Point",
@@ -1850,7 +1850,7 @@
     "fid": 115,
     "filename": "wkcd_109",
     "rotation": 90,
-    "image_id": "e183616b-227e-414f-d28c-18df6e3de700"
+    "image_id": "d3f56259-5f96-4785-212c-c57175358f00"
    },
    "geometry": {
     "type": "Point",
@@ -1867,7 +1867,7 @@
     "fid": 116,
     "filename": "wkcd_110",
     "rotation": 90,
-    "image_id": "2153d881-2ae2-4cd4-1e6f-519b5600c400"
+    "image_id": "3578a3f6-07ad-4ed6-945e-b416702b6800"
    },
    "geometry": {
     "type": "Point",
@@ -1884,7 +1884,7 @@
     "fid": 117,
     "filename": "wkcd_111",
     "rotation": 340,
-    "image_id": "9b58c058-4d61-4d25-dc55-f9f82e4d1800"
+    "image_id": "441a4342-d7de-4ecd-1fbb-04ea40d33800"
    },
    "geometry": {
     "type": "Point",
@@ -1901,7 +1901,7 @@
     "fid": 118,
     "filename": "wkcd_112",
     "rotation": 80,
-    "image_id": "591d69ab-9d05-42de-9cd5-bf8b8e572d00"
+    "image_id": "eef961be-07f3-42a1-b752-255dec035800"
    },
    "geometry": {
     "type": "Point",
@@ -1918,7 +1918,7 @@
     "fid": 119,
     "filename": "wkcd_113",
     "rotation": 340,
-    "image_id": "e57154b9-3b5e-4381-0140-24b7d24a3800"
+    "image_id": "188fc631-bbd4-41bb-8c0a-be506598c300"
    },
    "geometry": {
     "type": "Point",
@@ -1935,7 +1935,7 @@
     "fid": 120,
     "filename": "wkcd_114",
     "rotation": 100,
-    "image_id": "4db6fcc8-98b4-47ff-f0da-5b0e283b8b00"
+    "image_id": "b1114e43-cada-469e-f02a-60900ecf0a00"
    },
    "geometry": {
     "type": "Point",
@@ -1952,7 +1952,7 @@
     "fid": 121,
     "filename": "wkcd_115",
     "rotation": 210,
-    "image_id": "c87959f2-1153-4ed0-e6ee-90d719bbf700"
+    "image_id": "d2e72f8b-4303-4350-edaa-83d36635ff00"
    },
    "geometry": {
     "type": "Point",
@@ -1969,7 +1969,7 @@
     "fid": 122,
     "filename": "wkcd_116",
     "rotation": 180,
-    "image_id": "954a6716-e3f6-45da-9180-363058aaa300"
+    "image_id": "7bf055bf-972e-439c-65f7-8c2f2489a000"
    },
    "geometry": {
     "type": "Point",
